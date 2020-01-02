@@ -1,0 +1,15 @@
+{
+	"name": "Text2_debug",
+	"plugin-id": "Text",
+	"sid": 372317602591181,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 304228077405448
+		}
+	],
+	"effectTypes": []
+}

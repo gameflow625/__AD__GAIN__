@@ -1,0 +1,100 @@
+{
+	"name": "Spinner",
+	"plugin-id": "Sprite",
+	"sid": 545913560092303,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Result",
+			"type": "number",
+			"desc": "Check this value for the last spin result",
+			"sid": 892930548444281
+		},
+		{
+			"name": "Divisions",
+			"type": "number",
+			"desc": "Number of sections on this spinner. Must be arranged like a clock.",
+			"sid": 808153475859776
+		},
+		{
+			"name": "SwipeX",
+			"type": "number",
+			"desc": "Determine direction of swipe",
+			"sid": 243750535853810
+		},
+		{
+			"name": "SwipeY",
+			"type": "number",
+			"desc": "Determine direction of swipe",
+			"sid": 555755041198175
+		},
+		{
+			"name": "SpeedLimit",
+			"type": "number",
+			"desc": "Limit the speed to prevent very long spins.",
+			"sid": 312719233467263
+		},
+		{
+			"name": "Spinning",
+			"type": "boolean",
+			"desc": "Prevent touching the spinner while it's spinning",
+			"sid": 981081251151017
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 284267783064592
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 510,
+						"height": 510,
+						"originX": 0.501961,
+						"originY": 0.501961,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\giochi\\11_Swipe_Spinners\\Spinners\\Wheel-20-radial-shaded.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2,
+						"collisionPoly": {
+							"points": [
+								0.146535,
+								0.146535,
+								0.49901,
+								0,
+								0.853465,
+								0.146535,
+								1,
+								0.49901,
+								0.853465,
+								0.853465,
+								0.49901,
+								1,
+								0.146535,
+								0.853465,
+								0,
+								0.49901
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 554597850398937,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

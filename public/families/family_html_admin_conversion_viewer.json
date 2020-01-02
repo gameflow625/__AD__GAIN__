@@ -1,0 +1,13 @@
+{
+	"name": "Family_HTML_admin_conversion_viewer",
+	"plugin-id": "StraniAnelli_HTMLElement",
+	"sid": 689674703185183,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"members": [
+		"html_total_coins",
+		"html_total_exp",
+		"html_total_jems",
+		"html_total_money"
+	]
+}

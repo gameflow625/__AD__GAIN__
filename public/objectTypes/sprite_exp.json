@@ -1,0 +1,56 @@
+{
+	"name": "Sprite_Exp",
+	"plugin-id": "Sprite",
+	"sid": 386747435784938,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "pos",
+			"type": "number",
+			"desc": "",
+			"sid": 781157149593105
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 115,
+						"height": 115,
+						"originX": 0.504348,
+						"originY": 0.504348,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\exp1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 25,
+						"collisionPoly": {
+							"points": [
+								0.900836,
+								0.104348,
+								0.891304,
+								0.938127,
+								0.0668895,
+								0.933111,
+								0.0687292,
+								0.108696
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 574282984213308,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

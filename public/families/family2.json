@@ -1,0 +1,13 @@
+{
+	"name": "Family2",
+	"plugin-id": "TiledBg",
+	"sid": 423363971955058,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"TiledBackground",
+		"TiledBackground3",
+		"TiledBackground4"
+	]
+}

@@ -1,0 +1,85 @@
+{
+	"name": "selettore",
+	"plugin-id": "Sprite",
+	"sid": 371606160724855,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Tab",
+			"type": "string",
+			"desc": "",
+			"sid": 392887210090126
+		},
+		{
+			"name": "trig",
+			"type": "number",
+			"desc": "",
+			"sid": 336013322951799
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 861701775565744
+		},
+		{
+			"behaviorId": "lunarray_LiteTween",
+			"name": "LiteTween",
+			"sid": 621746438432479
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\selettore_rosso_V.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 49,
+						"useCollisionPoly": true,
+						"duration": 0
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\selettore_verde_V.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 50,
+						"useCollisionPoly": true,
+						"duration": 0
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\selettore_blu_V.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 51,
+						"useCollisionPoly": true,
+						"duration": 0
+					}
+				],
+				"sid": 368656973148385,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

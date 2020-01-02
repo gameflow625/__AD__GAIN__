@@ -1,0 +1,18 @@
+{
+	"name": "Family_data_label",
+	"plugin-id": "StraniAnelli_HTMLElement",
+	"sid": 642806430815618,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"members": [
+		"HTML_pr9_TPC",
+		"HTML_pr8",
+		"HTML_pr7",
+		"HTML_pr6",
+		"HTML_pr5",
+		"HTML_pr4",
+		"HTML_pr3",
+		"HTML_pr2",
+		"HTML_pr1"
+	]
+}

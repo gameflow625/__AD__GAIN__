@@ -1,0 +1,20 @@
+{
+	"name": "TiledBackground5",
+	"plugin-id": "TiledBg",
+	"sid": 569911288520081,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 719,
+		"height": 1100,
+		"originX": 0.4721835883171071,
+		"originY": 0.47954545454545455,
+		"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\admin_menu.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 93,
+		"useCollisionPoly": true
+	}
+}

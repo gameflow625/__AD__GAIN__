@@ -1,0 +1,53 @@
+{
+	"name": "Sprite11",
+	"plugin-id": "Sprite",
+	"sid": 722399301456003,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 320,
+						"height": 185,
+						"originX": 0.5,
+						"originY": 0.508108,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\promoCode.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5,
+						"collisionPoly": {
+							"points": [
+								0.00802356,
+								0.0152834,
+								0.496945,
+								0.00301205,
+								0.985865,
+								0.0275547,
+								0.985865,
+								0.972446,
+								0.496945,
+								0.996988,
+								0.00802356,
+								0.984716
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 716420749914376,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,124 @@
+{
+	"name": "Event games",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 808039399101899,
+					"parameters": {
+						"tag": "\"game\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 648598708275259,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "display-html-string",
+							"objectClass": "iframe2",
+							"sid": 349763918925966,
+							"parameters": {
+								"html": "AJAX.LastData"
+							}
+						}
+					],
+					"sid": 617018441838726
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "zipIsFileLoaded",
+					"objectClass": "jsZip",
+					"sid": 452056318761183
+				}
+			],
+			"actions": [
+				{
+					"id": "add-html-element",
+					"objectClass": "InjectCSS",
+					"sid": 737745884504873,
+					"parameters": {
+						"stringElement": "jsZip.getResult"
+					}
+				}
+			],
+			"sid": 272492749150853,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "zipIsLoaded",
+					"objectClass": "jsZip",
+					"sid": 207962112831965
+				}
+			],
+			"actions": [
+				{
+					"id": "jsloadfile",
+					"objectClass": "jsZip",
+					"sid": 151912133312000,
+					"parameters": {
+						"filename": "\"index.html\"",
+						"getType": "str"
+					}
+				}
+			],
+			"sid": 206916138235223,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 715214693600897
+				}
+			],
+			"actions": [
+				{
+					"id": "open-url-in-new-window",
+					"objectClass": "Browser",
+					"sid": 989718963915306,
+					"disabled": true,
+					"parameters": {
+						"url": "\"http://localhost/risor/3/index.html\"",
+						"tag": "\"NewWindow\""
+					}
+				},
+				{
+					"id": "request-url",
+					"objectClass": "AJAX",
+					"sid": 166930528281823,
+					"parameters": {
+						"tag": "\"game\"",
+						"url": "\"https://localhost:443/risor/3/index.html\""
+					}
+				},
+				{
+					"id": "jsloadzipurl",
+					"objectClass": "jsZip",
+					"sid": 426365867803703,
+					"disabled": true,
+					"parameters": {
+						"zipurl": "\"https://localhost/risor/3.zip\""
+					}
+				}
+			],
+			"sid": 894114812597102
+		}
+	],
+	"sid": 521064931476525
+}

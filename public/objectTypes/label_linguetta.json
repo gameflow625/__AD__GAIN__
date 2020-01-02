@@ -1,0 +1,15 @@
+{
+	"name": "Label_linguetta",
+	"plugin-id": "Text",
+	"sid": 817743679165175,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 405518405375458
+		}
+	],
+	"effectTypes": []
+}

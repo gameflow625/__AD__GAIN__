@@ -1,0 +1,1218 @@
+{
+	"name": "Menu_events",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Variable3",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 116850097203997
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 910839903872888,
+					"parameters": {
+						"name": "\"write\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 169740299811118,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 337706347474683,
+							"parameters": {
+								"first-value": "Function.Param(0)",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "listner",
+							"sid": 874919239676402,
+							"parameters": {
+								"text": "Function.Param(1)"
+							}
+						}
+					],
+					"sid": 131282146861837
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 657051352968092,
+							"parameters": {
+								"first-value": "Function.Param(0)",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load-image-from-url",
+							"objectClass": "img_user",
+							"sid": 705762688179916,
+							"parameters": {
+								"uri": "Function.Param(1)",
+								"size": "keep-current-size",
+								"cross-origin": "anonymous"
+							}
+						}
+					],
+					"sid": 960320969496755
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 122933711711704,
+							"parameters": {
+								"first-value": "Function.Param(0)",
+								"comparison": 0,
+								"second-value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "TOT_COINS",
+							"sid": 274670594189805,
+							"parameters": {
+								"text": "Function.Param(1)"
+							}
+						}
+					],
+					"sid": 636470764060128
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 552333657210604,
+							"parameters": {
+								"first-value": "Function.Param(0)",
+								"comparison": 0,
+								"second-value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "TOT_EXP",
+							"sid": 818581382565375,
+							"parameters": {
+								"text": "Function.Param(1)"
+							}
+						}
+					],
+					"sid": 188185579502612
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 511039616901436,
+							"parameters": {
+								"first-value": "Function.Param(0)",
+								"comparison": 0,
+								"second-value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "TOT_JEMS",
+							"sid": 811488777909717,
+							"parameters": {
+								"text": "Function.Param(1)"
+							}
+						}
+					],
+					"sid": 108041229753745
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 694973498868975,
+							"parameters": {
+								"first-value": "Function.Param(0)",
+								"comparison": 0,
+								"second-value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "TOT_MONEY",
+							"sid": 609868386100259,
+							"parameters": {
+								"text": "Function.Param(1)"
+							}
+						}
+					],
+					"sid": 641069239715153
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 309376770860409
+				}
+			],
+			"actions": [],
+			"sid": 261150389210543,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "request-location",
+							"objectClass": "Geolocation",
+							"sid": 743063114021780,
+							"parameters": {
+								"accuracy": "normal",
+								"timeout": "60",
+								"maximum-age": "0"
+							}
+						},
+						{
+							"id": "execute-javascript",
+							"objectClass": "Browser",
+							"sid": 501749537619909,
+							"parameters": {
+								"javascript": "\" \r\n\r\n\r\n    if (firebase.auth().currentUser) {var user = firebase.auth().currentUser;\r\n var imma = user.photoURL;\r\nc2_callFunction('write',[1,imma]);\r\n};\""
+							}
+						},
+						{
+							"id": "execute-javascript",
+							"objectClass": "Browser",
+							"sid": 550210501589823,
+							"parameters": {
+								"javascript": "\"\r\nvar resultC='';\r\nvar resultJ='';\r\nvar resultE='';\r\nvar resultM='';\r\n\r\n\r\n\r\n\r\nvar user_info = firebase.auth().currentUser\r\nvar refUsers = firebase.database().ref('Users/');\r\nvar refUsersTotCoins = refUsers.child(user_info.uid  + '/totCoins/Record');      \r\n refUsersTotCoins.once('value')\r\n   .then(function(snapshot) {\r\n            var resultC = snapshot.val();\r\n\r\nc2_callFunction('write',[2,resultC])\r\n\r\n   });\r\nvar refUsersTotJems = refUsers.child(user_info.uid  + '/totJems/Record');      \r\n refUsersTotJems.once('value')\r\n   .then(function(snapshot) {\r\n            var resultJ = snapshot.val();\r\n  \r\nc2_callFunction('write',[3,resultJ])\r\n\r\n });\r\n\r\n\r\nvar refUsersTotExp = refUsers.child(user_info.uid  + '/totExp/Record');      \r\n refUsersTotExp.once('value')\r\n   .then(function(snapshot) {\r\n            var resultE = snapshot.val();\r\n \r\nc2_callFunction('write',[4,resultE])\r\n\r\n  });\r\n\r\nvar refUsersTotMoney = refUsers.child(user_info.uid  + '/totMoney');      \r\n refUsersTotMoney.once('value')\r\n   .then(function(snapshot) {\r\n            var resultM = snapshot.val();\r\n\r\n\r\nc2_callFunction('write',[5,resultM])\r\n   });\r\n\""
+							}
+						},
+						{
+							"id": "execute-javascript",
+							"objectClass": "Browser",
+							"sid": 825433983119568,
+							"disabled": true,
+							"parameters": {
+								"javascript": "\"\r\nvar resultC='';\r\nvar resultJ='';\r\nvar resultE='';\r\nvar resultM='';\r\n\r\n\r\n\r\n\r\nvar user_info = firebase.auth().currentUser\r\nvar refOffers = firebase.database().ref('PublicProducts/'+user_info.uid+$key'/');\r\n  \r\n refOffers.once('value')\r\n   .then(function(snapshot) {\r\n\r\nsnapshot.forEach(function(snap){\r\n\r\n            var resultC = snapshot.val();\r\n\r\nc2_callFunction('write',[2,resultC])\r\n\r\n   });\r\nvar refUsersTotJems = refUsers.child(user_info.uid  + '/totJems/Record');      \r\n refUsersTotJems.once('value')\r\n   .then(function(snapshot) {\r\n            var resultJ = snapshot.val();\r\n  \r\nc2_callFunction('write',[3,resultJ])\r\n\r\n });\r\n\r\n\r\nvar refUsersTotExp = refUsers.child(user_info.uid  + '/totExp/Record');      \r\n refUsersTotExp.once('value')\r\n   .then(function(snapshot) {\r\n            var resultE = snapshot.val();\r\n \r\nc2_callFunction('write',[4,resultE])\r\n\r\n  });\r\n\r\nvar refUsersTotMoney = refUsers.child(user_info.uid  + '/totMoney');      \r\n refUsersTotMoney.once('value')\r\n   .then(function(snapshot) {\r\n            var resultM = snapshot.val();\r\n\r\n\r\nc2_callFunction('write',[5,resultM])\r\n   });\r\n\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "List2",
+							"sid": 139623905243737,
+							"parameters": {
+								"property-name": "\"background-color\"",
+								"value": "\"transparent\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "List2",
+							"sid": 474830055295147,
+							"parameters": {
+								"property-name": "\"border-style\"",
+								"value": "\"none\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "List2",
+							"sid": 987497316668034,
+							"parameters": {
+								"property-name": "\"color\"",
+								"value": "\"white\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "List2",
+							"sid": 318522490171810,
+							"parameters": {
+								"property-name": "\"font-size\"",
+								"value": "\"12px\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "List2",
+							"sid": 116118539020177,
+							"parameters": {
+								"property-name": "\"overflow\"",
+								"value": "\"auto\""
+							}
+						}
+					],
+					"sid": 560889109792949,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 220247670441383,
+									"parameters": {
+										"first-value": "adm_data_obj",
+										"comparison": 1,
+										"second-value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Text_products_list",
+									"sid": 293554384866917
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "List2",
+									"sid": 100442419951039,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 916149541165756,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for",
+											"objectClass": "System",
+											"sid": 566799799597939,
+											"parameters": {
+												"name": "\"a\"",
+												"start-index": "0",
+												"end-index": "tokencount(adm_data_obj,newline)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-item-at",
+											"objectClass": "List2",
+											"sid": 331034612491137,
+											"parameters": {
+												"index": "loopindex(\"a\")",
+												"text": "tokenat(adm_data_obj,loopindex(\"a\"),newline)"
+											}
+										}
+									],
+									"sid": 181261040820891
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 516399770661913,
+					"parameters": {
+						"object": "Sprite12"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 937453151282627,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 211983325918905,
+							"parameters": {
+								"layer": "3",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 797541385094041,
+							"parameters": {
+								"layer": "4",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 846247834717465
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 619546007248925,
+					"parameters": {
+						"object": "portfolio"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 980377385827618,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 504337797472773,
+							"parameters": {
+								"group-name": "\"event_mona\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 115838785868010,
+							"parameters": {
+								"layout": "Layout_mona"
+							}
+						}
+					],
+					"sid": 323837275228212
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 917173031799201,
+					"parameters": {
+						"object": "Sprite5"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 363015328233594,
+					"disabled": true,
+					"parameters": {
+						"layer": "3"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 232611299696657,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 140116924484686,
+							"disabled": true,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "go-to-url",
+							"objectClass": "Browser",
+							"sid": 325028055648922,
+							"disabled": true,
+							"parameters": {
+								"url": "Browser.URL&\"/\"&int(random(1,15))&\"/index.html\"",
+								"target": "self"
+							}
+						},
+						{
+							"id": "jsloadzipurl",
+							"objectClass": "jsZip",
+							"sid": 671249409973916,
+							"disabled": true,
+							"parameters": {
+								"zipurl": "\"https://localhost:8080/risor/2/pena.zip\""
+							}
+						},
+						{
+							"id": "go-to-url",
+							"objectClass": "Browser",
+							"sid": 200516924261731,
+							"disabled": true,
+							"parameters": {
+								"url": "\"https://localhost:8080/risor/2/index.html\"",
+								"target": "self"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 843471589863310,
+							"parameters": {
+								"layout": "games"
+							}
+						}
+					],
+					"sid": 493580273971250
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 940495463752723,
+					"parameters": {
+						"tag": "\"pz\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 635901874818180,
+			"disabled": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "read-binary-file",
+							"objectClass": "NWjs",
+							"sid": 380955132819639,
+							"disabled": true,
+							"parameters": {
+								"tag": "\"bin\"",
+								"path": "AJAX.LastData",
+								"destination": "BinaryData"
+							}
+						}
+					],
+					"sid": 795132457712165,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 680346935229842,
+					"parameters": {
+						"object": "Sprite6"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 509487472117706,
+					"disabled": true,
+					"parameters": {
+						"layer": "3"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 709929902394226,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "jsloadzipurl",
+							"objectClass": "jsZip",
+							"sid": 105063703489709,
+							"disabled": true,
+							"parameters": {
+								"zipurl": "\"https://localhost:8080/risor/2/pena.zip\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 771270254666168,
+							"parameters": {
+								"layout": "games"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 893125428738495,
+							"disabled": true,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "go-to-url",
+							"objectClass": "Browser",
+							"sid": 532802746035136,
+							"disabled": true,
+							"parameters": {
+								"url": "Browser.URL&\"/\"&int(random(1,15))&\"/index.html\"",
+								"target": "self"
+							}
+						},
+						{
+							"id": "jsloadfile",
+							"objectClass": "jsZip",
+							"sid": 309033733650345,
+							"disabled": true,
+							"parameters": {
+								"filename": "\"pena\"",
+								"getType": "nodebuffer"
+							}
+						},
+						{
+							"id": "go-to-url",
+							"objectClass": "Browser",
+							"sid": 242053848067498,
+							"disabled": true,
+							"parameters": {
+								"url": "\"https://ad-gain-a5079.firebaseapp.com/risor/3/index.html\"",
+								"target": "self"
+							}
+						}
+					],
+					"sid": 503745951010957
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "zipIsLoaded",
+					"objectClass": "jsZip",
+					"sid": 956564747126318
+				}
+			],
+			"actions": [
+				{
+					"id": "jsloadfile",
+					"objectClass": "jsZip",
+					"sid": 190940381957672,
+					"parameters": {
+						"filename": "\"pena/nw.exe\"",
+						"getType": "str"
+					}
+				}
+			],
+			"sid": 487305968677830,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "zipIsFileLoaded",
+					"objectClass": "jsZip",
+					"sid": 355482986338596
+				}
+			],
+			"actions": [],
+			"sid": 143503189499279,
+			"disabled": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "run-file",
+							"objectClass": "NWjs",
+							"sid": 950172349415184,
+							"disabled": true,
+							"parameters": {
+								"path": "jsZip.getResult"
+							}
+						}
+					],
+					"sid": 571320481090077,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Daily Bonus",
+			"description": "",
+			"isActiveOnStart": false,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "Pointer",
+							"sid": 795181580631239,
+							"parameters": {
+								"comparison": 1,
+								"x-co-ordinate": "Spinner.X"
+							}
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "Pointer",
+							"sid": 443358918965967,
+							"parameters": {
+								"comparison": 1,
+								"y-co-ordinate": "Spinner.Y"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Pointer",
+							"sid": 820674424001338,
+							"parameters": {
+								"x": "Spinner.X",
+								"y": "Spinner.Y"
+							}
+						}
+					],
+					"sid": 561745124914098
+				},
+				{
+					"eventType": "comment",
+					"text": "To prevent all but one spin, move the set \"Spinning to False\" below to someplace where you are ready for the player to spin, and set the default value of \"Spinning\" to True on the sprite. (the player can't spin the spinner while \"Spinner.Spinning\" is true)"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 933080920349506,
+							"parameters": {
+								"first-value": "abs(Spinner.Rotate.Speed)",
+								"comparison": 2,
+								"second-value": "40"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Spinner",
+							"sid": 437007245355682,
+							"parameters": {
+								"instance-variable": "Spinning"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Spinner",
+							"sid": 159300878415304,
+							"parameters": {
+								"instance-variable": "Result",
+								"value": "Spinner.Divisions-int((Spinner.Divisions/360)*(Spinner.Angle))"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Spinner",
+							"sid": 515633364551071,
+							"behaviorType": "Rotate",
+							"parameters": {
+								"speed": "0"
+							}
+						},
+						{
+							"id": "set-acceleration",
+							"objectClass": "Spinner",
+							"sid": 465008867007118,
+							"behaviorType": "Rotate",
+							"parameters": {
+								"acceleration": "0"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "text_slider_money",
+							"sid": 122706988218431,
+							"parameters": {
+								"text": "\"Result: \" & Spinner.Result"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Spinner",
+							"sid": 808275515667406,
+							"parameters": {
+								"instance-variable": "Spinning",
+								"value": "false"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 289458713245583,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "go-to-url",
+							"objectClass": "Browser",
+							"sid": 414384199241840,
+							"disabled": true,
+							"parameters": {
+								"url": "\"res/\"& Spinner.Result&\"/index.html\"",
+								"target": "self"
+							}
+						}
+					],
+					"sid": 809546245433315,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 412179506655359,
+									"parameters": {
+										"layer": "3",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 953162869433303,
+									"parameters": {
+										"layer": "5",
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 997211055296502
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Spinner",
+							"sid": 461516581443211,
+							"parameters": {
+								"instance-variable": "Spinning"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "rotate-toward-angle",
+							"objectClass": "Pointer",
+							"sid": 373579388535397,
+							"parameters": {
+								"degrees": "2",
+								"angle": "-90"
+							}
+						}
+					],
+					"sid": 221654161356559
+				},
+				{
+					"eventType": "comment",
+					"text": "Setup to get the direction"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-any-touch-start",
+							"objectClass": "Touch",
+							"sid": 419977065781600
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Spinner",
+							"sid": 550512443822202,
+							"parameters": {
+								"instance-variable": "SwipeX",
+								"value": "Touch.AbsoluteX"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Spinner",
+							"sid": 714340652271558,
+							"parameters": {
+								"instance-variable": "SwipeY",
+								"value": "Touch.Y"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "text_slider_money",
+							"sid": 704236171846283,
+							"parameters": {
+								"text": "\"Spinning\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "TextSpeed",
+							"sid": 155843092498391,
+							"parameters": {
+								"text": "\"\""
+							}
+						}
+					],
+					"sid": 685191742982074
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-in-touch",
+							"objectClass": "Touch",
+							"sid": 721802757069612
+						},
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 810202175244012,
+							"parameters": {
+								"object": "Spinner"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Spinner",
+							"sid": 141415543829795,
+							"parameters": {
+								"instance-variable": "Spinning"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 833751540594415,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "If touch speed isn't high enough (700) nothing happens. prevents half spin cheating."
+						},
+						{
+							"eventType": "comment",
+							"text": "Set the spinner instance variable \"SpeedLimit\" as the max spin speed, to keep it from getting boring while waiting for the spinner to slow down."
+						},
+						{
+							"eventType": "comment",
+							"text": "Decelerate is 600 plus or minus 20, so that a full speed spin doesn't always travel the same distance."
+						},
+						{
+							"eventType": "comment",
+							"text": "rotate speed is set negative or positive depending on the direction of the swipe"
+						},
+						{
+							"eventType": "variable",
+							"name": "Decelerate",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "How fast the spinner slows down",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 351250433052052
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-touch-speed",
+									"objectClass": "Touch",
+									"sid": 528028407813711,
+									"parameters": {
+										"touch-index": "0",
+										"comparison": 4,
+										"speed": "700"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Spinner",
+									"sid": 141204197928330,
+									"parameters": {
+										"instance-variable": "Spinning",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 611157176062381,
+									"parameters": {
+										"variable": "Decelerate",
+										"value": "580+random(40)"
+									}
+								}
+							],
+							"sid": 845712375213007,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Swipe scross the top is reversed if below center."
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 761613516432000,
+											"parameters": {
+												"first-value": "Spinner.SwipeY",
+												"comparison": 2,
+												"second-value": "Spinner.Y"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-speed",
+											"objectClass": "Spinner",
+											"sid": 936146114491858,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"speed": "(-min(Touch.SpeedAt(0),Spinner.SpeedLimit)*(Touch.AbsoluteX<Spinner.SwipeX))+(min(Touch.SpeedAt(0),Spinner.SpeedLimit)*(Touch.AbsoluteX>Spinner.SwipeX))"
+											}
+										},
+										{
+											"id": "set-acceleration",
+											"objectClass": "Spinner",
+											"sid": 196628305295714,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"acceleration": "(Decelerate*(Touch.AbsoluteX<Spinner.SwipeX))+ (-Decelerate*(Touch.AbsoluteX>Spinner.SwipeX))"
+											}
+										}
+									],
+									"sid": 706202739898354
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 810149096597015
+										}
+									],
+									"actions": [
+										{
+											"id": "set-speed",
+											"objectClass": "Spinner",
+											"sid": 887366849624351,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"speed": "(min(Touch.SpeedAt(0),Spinner.SpeedLimit)*(Touch.AbsoluteX<Spinner.SwipeX))+(-min(Touch.SpeedAt(0),Spinner.SpeedLimit)*(Touch.AbsoluteX>Spinner.SwipeX))"
+											}
+										},
+										{
+											"id": "set-acceleration",
+											"objectClass": "Spinner",
+											"sid": 219383747948638,
+											"behaviorType": "Rotate",
+											"parameters": {
+												"acceleration": "(-600*(Touch.AbsoluteX<Spinner.SwipeX))+ (600*(Touch.AbsoluteX>Spinner.SwipeX))"
+											}
+										}
+									],
+									"sid": 756039796248468
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Play click for each division"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 659272944174126,
+							"parameters": {
+								"first-value": "((Spinner.Divisions/360)*(Spinner.Angle))-int((Spinner.Divisions/360)*(Spinner.Angle))",
+								"comparison": 4,
+								"second-value": "0.4"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 800179796512281
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 220878098313493,
+							"parameters": {
+								"tag": "\"click\""
+							}
+						}
+					],
+					"sid": 292261745798015
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 403241430021936,
+							"parameters": {
+								"first-value": "Spinner.Rotate.Speed",
+								"comparison": 4,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "rotate-toward-position",
+							"objectClass": "Pointer",
+							"sid": 416950640744530,
+							"parameters": {
+								"degrees": "2",
+								"x": "Spinner.X+100*(((Spinner.Divisions/360)*(Spinner.Angle))-int((Spinner.Divisions/360)*(Spinner.Angle)))",
+								"y": "0"
+							}
+						}
+					],
+					"sid": 879977808771468
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 974778964568451,
+							"parameters": {
+								"first-value": "Spinner.Rotate.Speed",
+								"comparison": 2,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "rotate-toward-position",
+							"objectClass": "Pointer",
+							"sid": 959374583161579,
+							"parameters": {
+								"degrees": "2",
+								"x": "Spinner.X-100*(((Spinner.Divisions/360)*(Spinner.Angle))-int((Spinner.Divisions/360)*(Spinner.Angle)))-1",
+								"y": "0"
+							}
+						}
+					],
+					"sid": 522498896371323
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 501786820745465
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "TextSpeed",
+							"sid": 921637689012487,
+							"parameters": {
+								"text": "\"Speed: \" & int(max(abs(spinner.Rotate.Speed),int(mid(TextSpeed.Text,6,9))))"
+							}
+						}
+					],
+					"sid": 730138972553677
+				}
+			],
+			"sid": 520198019176290
+		}
+	],
+	"sid": 906859246683981
+}

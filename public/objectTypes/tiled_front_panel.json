@@ -1,0 +1,26 @@
+{
+	"name": "Tiled_front_panel",
+	"plugin-id": "TiledBg",
+	"sid": 524412362526043,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "lunarray_LiteTween",
+			"name": "LiteTween",
+			"sid": 286657872188347
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 680,
+		"height": 718,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\form_bkg.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 52,
+		"useCollisionPoly": true
+	}
+}

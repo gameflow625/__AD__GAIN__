@@ -1,0 +1,149 @@
+{
+	"name": "log_popUp",
+	"layers": [
+		{
+			"name": "B_alert_popu",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "TiledBackground5",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1.1,
+						"image-scale-y": 1.1,
+						"image-angle": 0
+					},
+					"uid": 247,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -80,
+						"y": -48,
+						"width": 720,
+						"height": 1136,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							0.85
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 757494864749977,
+			"effectTypes": [],
+			"isInitiallyVisible": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": true
+		},
+		{
+			"name": "F_alert_popup",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "label_LOG",
+					"properties": {
+						"text": "TITLE OF PROMOTION",
+						"enable-bbcode": false,
+						"font": "Arial",
+						"size": 21.75,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0.8862745098039215,
+							1,
+							0.49019607843137253,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 251,
+					"instanceVariables": {
+						"parent": 0
+					},
+					"behaviors": {
+						"Pin": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 48,
+						"y": 272,
+						"width": 528,
+						"height": 528,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 924491456159226,
+			"effectTypes": [],
+			"isInitiallyVisible": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": true
+		}
+	],
+	"sid": 707855224586125,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 640,
+	"height": 1080,
+	"unboundedScrolling": false,
+	"eventSheet": "front_Debug_log"
+}

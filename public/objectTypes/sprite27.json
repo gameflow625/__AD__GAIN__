@@ -1,0 +1,53 @@
+{
+	"name": "Sprite27",
+	"plugin-id": "Sprite",
+	"sid": 367081436024670,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 759,
+						"height": 1219,
+						"originX": 0.500659,
+						"originY": 0.50041,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\Layout_login.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 35,
+						"collisionPoly": {
+							"points": [
+								0.131752,
+								0.0820345,
+								0.862978,
+								0.0853158,
+								0.993412,
+								0.49959,
+								0.911726,
+								0.945037,
+								0.102767,
+								0.936013,
+								0.0711462,
+								0.49959
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 171824984690954,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,98 @@
+{
+	"name": "BBQ_scanner",
+	"layers": [
+		{
+			"name": "viewer",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Sprite31",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 284,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 292,
+						"y": 504,
+						"width": 741.9318417129598,
+						"height": 1200.8799712607824,
+						"originX": 0.44378930097087377,
+						"originY": 0.45749898729582583,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 561671780027740,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "start",
+			"overriden": 0,
+			"instances": [],
+			"sid": 901398724183214,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		}
+	],
+	"sid": 455912517930846,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 640,
+	"height": 1080,
+	"unboundedScrolling": false,
+	"eventSheet": "EVENT_BBQ_SCANNER"
+}

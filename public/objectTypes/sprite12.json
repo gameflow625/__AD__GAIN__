@@ -1,0 +1,57 @@
+{
+	"name": "Sprite12",
+	"plugin-id": "Sprite",
+	"sid": 640743676767338,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 320,
+						"height": 185,
+						"originX": 0.5,
+						"originY": 0.502703,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\dailyBonus.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6,
+						"collisionPoly": {
+							"points": [
+								0.0448833,
+								0.11236,
+								0.5,
+								0.00224719,
+								0.955117,
+								0.11236,
+								0.98474,
+								0.498876,
+								0.97307,
+								0.932584,
+								0.5,
+								0.997753,
+								0.0260323,
+								0.934831,
+								0.0143627,
+								0.498876
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 692504812414010,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

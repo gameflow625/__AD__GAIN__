@@ -1,0 +1,3807 @@
+{
+	"name": "Event mona",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 623083688581536,
+					"parameters": {
+						"object": "Text_indietro"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 534023194458479,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-text",
+							"objectClass": "Text_indietro",
+							"sid": 213979440352676,
+							"parameters": {
+								"text-to-compare": "\"<\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Text_indietro",
+							"sid": 413614691124471,
+							"parameters": {
+								"instance-variable": "type",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 587673418608770,
+							"parameters": {
+								"layout": "Menu"
+							}
+						}
+					],
+					"sid": 490314925121625
+				}
+			]
+		},
+		{
+			"eventType": "variable",
+			"name": "tasso_pC",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 307737160285879
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "event_mona",
+			"description": "",
+			"isActiveOnStart": false,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-group-active",
+							"objectClass": "System",
+							"sid": 606524939224798,
+							"parameters": {
+								"group-name": "\"event_mona\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 982365602845385,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "cambio4",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 200516009523189
+						},
+						{
+							"eventType": "variable",
+							"name": "cambio5",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 359992515746310
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 343686188419434,
+									"parameters": {
+										"first-value": "Text_tasso.parrent",
+										"comparison": 0,
+										"second-value": "\"Coins\""
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 834732559043159,
+									"parameters": {
+										"first-value": "Text_tasso.start",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Text_tasso",
+									"sid": 503668960817620,
+									"parameters": {
+										"instance-variable": "start",
+										"value": "0"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 375470815470165,
+									"parameters": {
+										"name": "\"update\"",
+										"parameter-n": [
+											"\"Coins\"",
+											"\"start\"",
+											"int(Text_tasso.Text)"
+										]
+									}
+								}
+							],
+							"sid": 121148434933376
+						},
+						{
+							"eventType": "variable",
+							"name": "totalAmount",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 442232339227763
+						},
+						{
+							"eventType": "variable",
+							"name": "MoneyAmount",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 722567401231408
+						},
+						{
+							"eventType": "variable",
+							"name": "slider_points",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 766771708665678
+						},
+						{
+							"eventType": "variable",
+							"name": "slider_money",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 389684840122717
+						},
+						{
+							"eventType": "variable",
+							"name": "cambio",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 960827442991286
+						},
+						{
+							"eventType": "variable",
+							"name": "trigger_event",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 410139480147491
+						},
+						{
+							"eventType": "variable",
+							"name": "trigger_event_glob",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 954730763025912
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-function",
+									"objectClass": "Function",
+									"sid": 904190695172880,
+									"parameters": {
+										"name": "\"populate_MONA\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 114789009705756,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 313521994491013,
+											"parameters": {
+												"object": "text_slider_points",
+												"expression": "text_slider_points.parent",
+												"comparison": 0,
+												"value": "Function.Param(0)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-text",
+											"objectClass": "text_slider_points",
+											"sid": 958085384769433,
+											"parameters": {
+												"text": "Function.Param(1)"
+											}
+										}
+									],
+									"sid": 746196840158097
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 223000861667184,
+											"parameters": {
+												"object": "text_slider_money",
+												"expression": "text_slider_money.parent",
+												"comparison": 0,
+												"value": "Function.Param(0)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-text",
+											"objectClass": "text_slider_money",
+											"sid": 647592220145893,
+											"parameters": {
+												"text": "Function.Param(1)"
+											}
+										}
+									],
+									"sid": 586522315595876
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 227858475533307,
+											"parameters": {
+												"object": "Text_indietro",
+												"expression": "Text_indietro.parent",
+												"comparison": 0,
+												"value": "Function.Param(0)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-text",
+											"objectClass": "Text_indietro",
+											"sid": 157770280001871,
+											"parameters": {
+												"text": "Function.Param(1)"
+											}
+										}
+									],
+									"sid": 609329130789402
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-function",
+									"objectClass": "Function",
+									"sid": 247519352424007,
+									"parameters": {
+										"name": "\"update\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 255103350269834,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "Family2",
+											"sid": 404012120582595
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 417817971289911,
+											"parameters": {
+												"object-to-create": "TiledBackground",
+												"layer": "2",
+												"x": "549",
+												"y": "868"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Sprite_Slider",
+											"sid": 499402259889381,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "pin-to-object",
+											"objectClass": "text_slider_money",
+											"sid": 883793377080482,
+											"behaviorType": "Pin",
+											"parameters": {
+												"pin-to": "Sprite_Slider",
+												"mode": "position-angle"
+											}
+										},
+										{
+											"id": "pin-to-object",
+											"objectClass": "text_slider_points",
+											"sid": 251427676471103,
+											"behaviorType": "Pin",
+											"parameters": {
+												"pin-to": "Sprite_Slider",
+												"mode": "position-angle"
+											}
+										}
+									],
+									"sid": 991103971427230,
+									"disabled": true,
+									"children": [
+										{
+											"eventType": "variable",
+											"name": "cambio2",
+											"type": "string",
+											"initialValue": "Coins,Exp,Jems",
+											"comment": "",
+											"isStatic": true,
+											"isConstant": true,
+											"sid": 214407097071802
+										}
+									]
+								},
+								{
+									"eventType": "variable",
+									"name": "slider_points2",
+									"type": "string",
+									"initialValue": "",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 929680280724020
+								},
+								{
+									"eventType": "variable",
+									"name": "slider_money2",
+									"type": "string",
+									"initialValue": "",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 467045373652747
+								},
+								{
+									"eventType": "variable",
+									"name": "cambio3",
+									"type": "string",
+									"initialValue": "",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 930645601964269
+								},
+								{
+									"eventType": "variable",
+									"name": "cambio_perSlider",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 217765765107048
+								},
+								{
+									"eventType": "variable",
+									"name": "totalAmount2",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 427886788720860
+								},
+								{
+									"eventType": "variable",
+									"name": "MoneyAmount2",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 828138158945751
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 123101566560126,
+											"parameters": {
+												"first-value": "Function.Param(1)",
+												"comparison": 0,
+												"second-value": "\"start\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 599459127691784,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-comparison",
+													"objectClass": "System",
+													"sid": 990964149838520,
+													"parameters": {
+														"object": "Text_tasso",
+														"expression": "Text_tasso.parrent",
+														"comparison": 0,
+														"value": "\"Coins\""
+													}
+												}
+											],
+											"actions": [],
+											"sid": 435898685106883,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [
+														{
+															"id": "set-text",
+															"objectClass": "text_slider_money",
+															"sid": 652128519278401,
+															"disabled": true,
+															"parameters": {
+																"text": "slider_money"
+															}
+														},
+														{
+															"id": "set-text",
+															"objectClass": "text_slider_points",
+															"sid": 372355756944395,
+															"disabled": true,
+															"parameters": {
+																"text": "slider_points"
+															}
+														}
+													],
+													"sid": 805856140908077,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "set-eventvar-value",
+																	"objectClass": "System",
+																	"sid": 210727604145706,
+																	"parameters": {
+																		"variable": "MoneyAmount",
+																		"value": "int(text_slider_money.Text)*int(Text_tasso.Text)"
+																	}
+																},
+																{
+																	"id": "set-eventvar-value",
+																	"objectClass": "System",
+																	"sid": 434280127739252,
+																	"parameters": {
+																		"variable": "totalAmount",
+																		"value": "int(MoneyAmount)+(int(text_slider_points.Text))"
+																	}
+																}
+															],
+															"sid": 208631701997292
+														},
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "pick-all",
+																	"objectClass": "System",
+																	"sid": 511401566460209,
+																	"parameters": {
+																		"object": "Family2"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "destroy",
+																	"objectClass": "Family2",
+																	"sid": 507867411134972
+																},
+																{
+																	"id": "create-object",
+																	"objectClass": "System",
+																	"sid": 474099098463485,
+																	"parameters": {
+																		"object-to-create": "TiledBackground",
+																		"layer": "2",
+																		"x": "549",
+																		"y": "868"
+																	}
+																}
+															],
+															"sid": 267977206678745,
+															"children": [
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "compare-two-values",
+																			"objectClass": "System",
+																			"sid": 816994815378551,
+																			"parameters": {
+																				"first-value": "int(text_slider_points.Text)",
+																				"comparison": 0,
+																				"second-value": "0"
+																			}
+																		},
+																		{
+																			"id": "compare-two-values",
+																			"objectClass": "System",
+																			"sid": 820683580926373,
+																			"parameters": {
+																				"first-value": "int(text_slider_money.Text)",
+																				"comparison": 0,
+																				"second-value": "0"
+																			}
+																		}
+																	],
+																	"actions": [],
+																	"sid": 564810634047884,
+																	"children": [
+																		{
+																			"eventType": "block",
+																			"conditions": [],
+																			"actions": [
+																				{
+																					"id": "set-x",
+																					"objectClass": "Sprite_Slider",
+																					"sid": 339819120763420,
+																					"parameters": {
+																						"x": "549-(440/2)"
+																					}
+																				},
+																				{
+																					"id": "set-instvar-value",
+																					"objectClass": "Sprite_Slider",
+																					"sid": 867560668265552,
+																					"parameters": {
+																						"instance-variable": "type",
+																						"value": "\"Coins\""
+																					}
+																				}
+																			],
+																			"sid": 420313556037527
+																		}
+																	]
+																},
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "else",
+																			"objectClass": "System",
+																			"sid": 469891780520058
+																		}
+																	],
+																	"actions": [],
+																	"sid": 330424032757403,
+																	"children": [
+																		{
+																			"eventType": "block",
+																			"conditions": [],
+																			"actions": [
+																				{
+																					"id": "set-x",
+																					"objectClass": "Sprite_Slider",
+																					"sid": 519024659168466,
+																					"parameters": {
+																						"x": "549-((440/totalAmount)*int(text_slider_points.Text))"
+																					}
+																				},
+																				{
+																					"id": "set-instvar-value",
+																					"objectClass": "Sprite_Slider",
+																					"sid": 688918652244377,
+																					"parameters": {
+																						"instance-variable": "type",
+																						"value": "\"Coins\""
+																					}
+																				}
+																			],
+																			"sid": 609586881908445
+																		}
+																	]
+																},
+																{
+																	"eventType": "block",
+																	"conditions": [],
+																	"actions": [
+																		{
+																			"id": "set-width",
+																			"objectClass": "TiledBackground2",
+																			"sid": 989909422377860,
+																			"parameters": {
+																				"width": "Sprite_Slider.X-113"
+																			}
+																		},
+																		{
+																			"id": "set-instvar-value",
+																			"objectClass": "Sprite_Slider",
+																			"sid": 482063092443292,
+																			"parameters": {
+																				"instance-variable": "tasso_value",
+																				"value": "int(Text_tasso.Text)"
+																			}
+																		}
+																	],
+																	"sid": 383975349240318
+																},
+																{
+																	"eventType": "block",
+																	"conditions": [],
+																	"actions": [
+																		{
+																			"id": "set-width",
+																			"objectClass": "TiledBackground",
+																			"sid": 793457424889684,
+																			"parameters": {
+																				"width": "Family2.X-Sprite_Slider.X"
+																			}
+																		},
+																		{
+																			"id": "set-position",
+																			"objectClass": "text_slider_money",
+																			"sid": 446410458029781,
+																			"parameters": {
+																				"x": "Sprite_Slider.X",
+																				"y": "Self.Y"
+																			}
+																		},
+																		{
+																			"id": "set-position",
+																			"objectClass": "text_slider_points",
+																			"sid": 952029465648333,
+																			"parameters": {
+																				"x": "Sprite_Slider.X",
+																				"y": "Self.Y"
+																			}
+																		},
+																		{
+																			"id": "pin-to-object",
+																			"objectClass": "text_slider_money",
+																			"sid": 476937127574629,
+																			"behaviorType": "Pin",
+																			"parameters": {
+																				"pin-to": "Sprite_Slider",
+																				"mode": "position-angle"
+																			}
+																		},
+																		{
+																			"id": "pin-to-object",
+																			"objectClass": "text_slider_points",
+																			"sid": 222246603850780,
+																			"behaviorType": "Pin",
+																			"parameters": {
+																				"pin-to": "Sprite_Slider",
+																				"mode": "position-angle"
+																			}
+																		}
+																	],
+																	"sid": 972168560046840
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 925369038176511,
+											"parameters": {
+												"first-value": "Function.Param(1)",
+												"comparison": 0,
+												"second-value": "\"change_tasso\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 339207988987679,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "execute-javascript",
+													"objectClass": "Browser",
+													"sid": 696306802102351,
+													"parameters": {
+														"javascript": "Browser.ExecJS(\"\r\nvar fu0 = '\"&Function.Param(0)&\"';\r\nvar user_info = firebase.auth().currentUser;\r\nvar refUsers = firebase.database().ref('Users/');\r\nvar refUsersTotCoins = refUsers.child(user_info.uid  + '/tot' + fu0 + '/Record');      \r\n refUsersTotCoins.once('value')\r\n   .then(function(snapshot) {\r\n    var out=  snapshot.val()\r\n        c2_callFunction('changing',[fu0,out,'\"&Function.Param(3)&\"']);\r\n \r\n  });    \r\n\r\nvar refUsersTotCoins = refUsers.child(user_info.uid  + '/totMoney');      \r\n refUsersTotCoins.once('value')\r\n   .then(function(snapshot) {\r\n\r\n       var out=  snapshot.val()\r\n        c2_callFunction('changing',['-1',out,'\"&Function.Param(3)&\"']);\r\n \r\n  });    \r\n\r\n\r\n\r\n  \")"
+													}
+												}
+											],
+											"sid": 345642097809219
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 992542026147939,
+											"parameters": {
+												"first-value": "Function.Param(1)",
+												"comparison": 1,
+												"second-value": "\"start\""
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 203603001915542,
+											"parameters": {
+												"first-value": "Function.Param(1)",
+												"comparison": 1,
+												"second-value": "\"change_tasso\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 450219188105891,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "execute-javascript",
+													"objectClass": "Browser",
+													"sid": 135406241457836,
+													"parameters": {
+														"javascript": "\"var user = firebase.auth().currentUser;\r\nvar refUsers = firebase.database().ref('/Users/');\r\nvar refUsersUid = refUsers.child(user.uid);\r\nvar Moneyupdate =  refUsersUid.update({'totMoney':\"&Function.Param(1)&\"});\r\nvar varAdded = refUsersUid.child('tot\"&Function.Param(0)&\"').update({'Record':'\"&Function.Param(2)&\"'});\r\n\r\nc2_callFunction('agg_gui',['\"&Function.Param(0)&\"', '\"&Function.Param(1)&\"', '\"&Function.Param(2)&\"']);\r\n\r\n\r\n\""
+													}
+												}
+											],
+											"sid": 335645085078231
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 935515848983918
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 592612247431035,
+					"parameters": {
+						"name": "\"tassi\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 352015334018646,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 435661476018000,
+							"parameters": {
+								"object": "Text_tasso",
+								"expression": "Text_tasso.parrent",
+								"comparison": 0,
+								"value": "Function.Param(0)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Text_tasso",
+							"sid": 952724466268161,
+							"parameters": {
+								"text": "Function.Param(1)"
+							}
+						}
+					],
+					"sid": 724070119244098
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "pick-all",
+					"objectClass": "System",
+					"sid": 654563301101456,
+					"parameters": {
+						"object": "Text_tasso"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 422600520938689,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 600739775569358,
+							"parameters": {
+								"variable": "tasso_pC",
+								"value": "Text_tasso.PickedCount"
+							}
+						}
+					],
+					"sid": 501791785085706
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each-ordered",
+					"objectClass": "System",
+					"sid": 402250736490572,
+					"parameters": {
+						"object": "Text_tasso",
+						"expression": "0",
+						"order": "ascending"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 878082526608544,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 462806150679842,
+							"parameters": {
+								"first-value": "Text_tasso.IID",
+								"comparison": 2,
+								"second-value": "Text_tasso.Count"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 409974059939245,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "execute-javascript",
+							"objectClass": "Browser",
+							"sid": 302053239058923,
+							"parameters": {
+								"javascript": "\"\r\nvar Ref ='\"&Text_tasso.parrent&\"';\r\nvar refTassi = firebase.database().ref('tassiCambio/');\r\nvar ref_cambioCoins = refTassi.child('\"&Text_tasso.parrent&\"/');      \r\n ref_cambioCoins.once('value')\r\n   .then(function(snapshot) {\r\n            var result = snapshot.val();\r\n        \r\n           c2_callFunction('tassi',[Ref,result])              });\r\n\r\n\""
+							}
+						}
+					],
+					"sid": 592615835112575,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 191817236235391,
+									"parameters": {
+										"first-value": "Text_tasso.parrent",
+										"comparison": 0,
+										"second-value": "\"Coins\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Text_tasso",
+									"sid": 456284731808048,
+									"parameters": {
+										"instance-variable": "start",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 451308962049587
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 650833436635014,
+									"parameters": {
+										"first-value": "Text_tasso.IID",
+										"comparison": 0,
+										"second-value": "Text_tasso.Count-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 541173541354567,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								}
+							],
+							"sid": 559530303807999,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "execute-javascript",
+											"objectClass": "Browser",
+											"sid": 739606148354589,
+											"parameters": {
+												"javascript": "\"\r\n\r\nvar user_info = firebase.auth().currentUser;\r\nvar refUsers = firebase.database().ref('Users/');\r\nvar refUsersTotCoins = refUsers.child(user_info.uid  + '/totCoins/Record');      \r\n refUsersTotCoins.once('value')\r\n   .then(function(snapshot) {\r\n\r\n        var outputSP = snapshot.val();\r\n \r\nc2_callFunction('populate_MONA',[ 'sliderP' ,outputSP]);\r\n  });\r\n\r\nvar refUsersTotCoins = refUsers.child(user_info.uid  + '/totCoins/Record');      \r\n refUsersTotCoins.once('value')\r\n   .then(function(snapshot) {\r\n\r\n           var outputC = snapshot.val();\r\n \r\nc2_callFunction('populate_MONA',[ 'totC' ,outputC]);\r\n  });\r\n\r\nvar refUsersTotJems = firebase.database().ref('Users/' + user_info.uid  + '/totJems/Record');      \r\n refUsersTotJems.once('value')\r\n   .then(function(snapshot) {\r\n\r\n            var outputJ = snapshot.val();\r\n\r\nc2_callFunction('populate_MONA',[  'totJ' ,outputJ]);\r\n\r\n   });\r\n\r\nvar refUsersTotExp = refUsers.child(user_info.uid  + '/totExp/Record');      \r\n refUsersTotExp.once('value')\r\n   .then(function(snapshot) {\r\n\r\n            var outputE = snapshot.val();\r\n\r\nc2_callFunction('populate_MONA',[ 'totE' ,outputE]);\r\n\r\n   });\r\n\r\nvar refUsersTotMoney = refUsers.child(user_info.uid  + '/totMoney/');      \r\n refUsersTotMoney.once('value')\r\n   .then(function(snapshot) {\r\n\r\n            var outputSM = snapshot.val();\r\n\r\nc2_callFunction('populate_MONA',[ 'sliderM' ,outputSM]);\r\n\r\n\r\n   });\r\n\r\n\r\nvar refUsersTotMoney = refUsers.child(user_info.uid  + '/totMoney/');      \r\n refUsersTotMoney.once('value')\r\n   .then(function(snapshot) {\r\n\r\n            var outputM = snapshot.val();\r\nc2_callFunction('populate_MONA',[  'totM' ,outputM]);\r\n\r\n\r\n   })\r\n\r\n\r\n\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 100966653125671,
+											"parameters": {
+												"seconds": "0.2"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 553013456053899,
+											"parameters": {
+												"group-name": "\"event_mona\"",
+												"state": "deactivated"
+											}
+										}
+									],
+									"sid": 766066996712105
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 306982969218648,
+					"parameters": {
+						"name": "\"agg_gui\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 889308343333716,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 454138714986127,
+							"parameters": {
+								"object": "Text_indietro",
+								"expression": "Text_indietro.type",
+								"comparison": 0,
+								"value": "Function.Param(0)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Text_indietro",
+							"sid": 131859131182968,
+							"parameters": {
+								"text": "Function.Param(2)"
+							}
+						}
+					],
+					"sid": 759291565058979
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 449435024688161,
+							"parameters": {
+								"object": "Text_indietro",
+								"expression": "Text_indietro.parent",
+								"comparison": 0,
+								"value": "\"totM\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Text_indietro",
+							"sid": 308431698929509,
+							"parameters": {
+								"text": "Function.Param(1)"
+							}
+						}
+					],
+					"sid": 924748704740354
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 281789518209949,
+					"parameters": {
+						"name": "\"changing\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 351109640941424,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "slider_points",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 977652996100688
+				},
+				{
+					"eventType": "variable",
+					"name": "slider_money",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 235378052904782
+				},
+				{
+					"eventType": "variable",
+					"name": "cambio",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 482295949718438
+				},
+				{
+					"eventType": "variable",
+					"name": "cambio_perSlider",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 457915632788246
+				},
+				{
+					"eventType": "variable",
+					"name": "totalAmount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 975506879763509
+				},
+				{
+					"eventType": "variable",
+					"name": "MoneyAmount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 574448839696103
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 923757258635773,
+							"parameters": {
+								"first-value": "Function.Param(0)",
+								"comparison": 0,
+								"second-value": "\"-1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "text_slider_money",
+							"sid": 656276540805679,
+							"parameters": {
+								"text": "Function.Param(1)\r\n"
+							}
+						}
+					],
+					"sid": 679644921658918
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 849228907165130
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "text_slider_points",
+							"sid": 218968229745074,
+							"parameters": {
+								"text": "Function.Param(1)\r\n"
+							}
+						}
+					],
+					"sid": 445475371279781
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 574009704835459,
+							"parameters": {
+								"variable": "MoneyAmount",
+								"value": "(int(text_slider_money.Text)*int(Function.Param(2)))"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 920307619942354,
+							"parameters": {
+								"variable": "totalAmount",
+								"value": "int(MoneyAmount)+(int(text_slider_points.Text))"
+							}
+						}
+					],
+					"sid": 506529813768851
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-all",
+							"objectClass": "System",
+							"sid": 203057920361299,
+							"parameters": {
+								"object": "Family2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 742393536778197,
+							"disabled": true,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Family2",
+							"sid": 603509441166115
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 896847443975981,
+							"parameters": {
+								"object-to-create": "TiledBackground",
+								"layer": "2",
+								"x": "549",
+								"y": "868"
+							}
+						}
+					],
+					"sid": 109914243363957,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 902250720701462,
+									"parameters": {
+										"first-value": "int(text_slider_points.Text)",
+										"comparison": 0,
+										"second-value": "0"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 489770563025395,
+									"parameters": {
+										"first-value": "int(text_slider_money.Text)",
+										"comparison": 0,
+										"second-value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 722506284655371,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-x",
+											"objectClass": "Sprite_Slider",
+											"sid": 510659687781834,
+											"parameters": {
+												"x": "549-(440/2)"
+											}
+										}
+									],
+									"sid": 507676367491633
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 368271573218711
+								}
+							],
+							"actions": [],
+							"sid": 705091518237644,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-x",
+											"objectClass": "Sprite_Slider",
+											"sid": 727368874745283,
+											"parameters": {
+												"x": "549-((440/totalAmount)*int(text_slider_points.Text))"
+											}
+										}
+									],
+									"sid": 269706609386113
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-width",
+									"objectClass": "TiledBackground2",
+									"sid": 449747071609946,
+									"parameters": {
+										"width": "Sprite_Slider.X-113"
+									}
+								}
+							],
+							"sid": 102471342363240
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-width",
+									"objectClass": "TiledBackground",
+									"sid": 590293145951487,
+									"parameters": {
+										"width": "Family2.X-Sprite_Slider.X"
+									}
+								}
+							],
+							"sid": 998144857588794
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "mov_slid",
+			"description": "",
+			"isActiveOnStart": false,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-in-touch",
+							"objectClass": "Touch",
+							"sid": 830540195657713
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Sprite_Slider",
+							"sid": 567054636559859,
+							"parameters": {
+								"instance-variable": "step",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 627521317994358,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-touch-speed",
+									"objectClass": "Touch",
+									"sid": 732623584078375,
+									"parameters": {
+										"touch-index": "0",
+										"comparison": 5,
+										"speed": "250"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 180041213187372,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 383764779946454,
+											"parameters": {
+												"first-value": "Touch.X",
+												"comparison": 2,
+												"second-value": "Sprite_Slider.initX-30"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 383430608757733,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 638459125623680,
+													"parameters": {
+														"first-value": "int(text_slider_money.Text) -1",
+														"comparison": 2,
+														"second-value": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-x",
+													"objectClass": "Sprite_Slider",
+													"sid": 811320165060629,
+													"parameters": {
+														"x": "Sprite_Slider.initX"
+													}
+												}
+											],
+											"sid": 452113061435165
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 897233469196827
+												}
+											],
+											"actions": [],
+											"sid": 761106173890585,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [
+														{
+															"id": "set-instvar-value",
+															"objectClass": "Sprite_Slider",
+															"sid": 338089471765548,
+															"parameters": {
+																"instance-variable": "mov",
+																"value": "\"lx\""
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "Sprite_Slider",
+															"sid": 522327855940844,
+															"parameters": {
+																"instance-variable": "step",
+																"value": "0"
+															}
+														}
+													],
+													"sid": 640691367936562
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 520390337763374,
+											"parameters": {
+												"first-value": "Touch.X",
+												"comparison": 4,
+												"second-value": "Sprite_Slider.initX+30"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 862508840155937,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 736018634614653,
+													"parameters": {
+														"first-value": "int(text_slider_points.Text)-1",
+														"comparison": 2,
+														"second-value": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-x",
+													"objectClass": "Sprite_Slider",
+													"sid": 980688029615991,
+													"parameters": {
+														"x": "Sprite_Slider.initX"
+													}
+												}
+											],
+											"sid": 113334370905627
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 527660982489275
+												}
+											],
+											"actions": [],
+											"sid": 782769361911254,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [
+														{
+															"id": "set-instvar-value",
+															"objectClass": "Sprite_Slider",
+															"sid": 715150546305891,
+															"parameters": {
+																"instance-variable": "mov",
+																"value": "\"rx\""
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "Sprite_Slider",
+															"sid": 333410815456016,
+															"parameters": {
+																"instance-variable": "step",
+																"value": "0"
+															}
+														}
+													],
+													"sid": 173370961278177
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 304198937218927
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 123190954293937
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "event_admin",
+			"description": "",
+			"isActiveOnStart": false,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-group-active",
+							"objectClass": "System",
+							"sid": 548547902521214,
+							"parameters": {
+								"group-name": "\"event_admin\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "appearance-set-visible",
+							"objectClass": "Family_HTML_admin_conversion_viewer",
+							"sid": 290115331118012,
+							"parameters": {
+								"set-visible": "visible"
+							}
+						}
+					],
+					"sid": 141655403989889,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 673736715269357,
+									"parameters": {
+										"first-value": "Text_tasso.parrent",
+										"comparison": 0,
+										"second-value": "\"Coins\""
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 862169422521261,
+									"parameters": {
+										"first-value": "Text_tasso.start",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Text_tasso",
+									"sid": 330989473869718,
+									"parameters": {
+										"instance-variable": "start",
+										"value": "0"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 274232704158704,
+									"parameters": {
+										"name": "\"update\"",
+										"parameter-n": [
+											"\"Coins\"",
+											"\"start\"",
+											"int(Text_tasso.Text)"
+										]
+									}
+								}
+							],
+							"sid": 819652825945071
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-function",
+									"objectClass": "Function",
+									"sid": 279999596811676,
+									"parameters": {
+										"name": "\"update\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 986120498395773,
+							"children": [
+								{
+									"eventType": "variable",
+									"name": "slider_points",
+									"type": "string",
+									"initialValue": "",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 213067215799132
+								},
+								{
+									"eventType": "variable",
+									"name": "slider_money",
+									"type": "string",
+									"initialValue": "",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 897291308560042
+								},
+								{
+									"eventType": "variable",
+									"name": "cambio",
+									"type": "string",
+									"initialValue": "",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 186593826270806
+								},
+								{
+									"eventType": "variable",
+									"name": "cambio_perSlider",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 459294399371631
+								},
+								{
+									"eventType": "variable",
+									"name": "totalAmount",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 116520811076870
+								},
+								{
+									"eventType": "variable",
+									"name": "MoneyAmount",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 462178756225441
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 906464816379743,
+											"parameters": {
+												"first-value": "Function.Param(1)",
+												"comparison": 0,
+												"second-value": "\"start\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 782060511553289,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-comparison",
+													"objectClass": "System",
+													"sid": 413046797163252,
+													"parameters": {
+														"object": "Text_tasso",
+														"expression": "Text_tasso.parrent",
+														"comparison": 0,
+														"value": "\"Coins\""
+													}
+												}
+											],
+											"actions": [],
+											"sid": 624235988695016,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 532156333399076,
+															"parameters": {
+																"variable": "slider_money",
+																"value": "html_total_money.TextGetText"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 987656529221059,
+															"parameters": {
+																"variable": "slider_points",
+																"value": "html_total_coins.TextGetText"
+															}
+														},
+														{
+															"id": "set-text",
+															"objectClass": "text_slider_money",
+															"sid": 592026614649313,
+															"parameters": {
+																"text": "slider_money"
+															}
+														},
+														{
+															"id": "set-text",
+															"objectClass": "text_slider_points",
+															"sid": 658450935020150,
+															"parameters": {
+																"text": "slider_points"
+															}
+														}
+													],
+													"sid": 610484386792195,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "set-eventvar-value",
+																	"objectClass": "System",
+																	"sid": 722559244897188,
+																	"parameters": {
+																		"variable": "MoneyAmount",
+																		"value": "int(text_slider_money.Text)*int(Text_tasso.Text)"
+																	}
+																},
+																{
+																	"id": "set-eventvar-value",
+																	"objectClass": "System",
+																	"sid": 659484199291809,
+																	"parameters": {
+																		"variable": "totalAmount",
+																		"value": "int(MoneyAmount)+(int(text_slider_points.Text))"
+																	}
+																}
+															],
+															"sid": 883653365402015
+														},
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "pick-all",
+																	"objectClass": "System",
+																	"sid": 754170160521051,
+																	"parameters": {
+																		"object": "Family2"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "destroy",
+																	"objectClass": "Family2",
+																	"sid": 205183819552897
+																},
+																{
+																	"id": "create-object",
+																	"objectClass": "System",
+																	"sid": 245480900212272,
+																	"parameters": {
+																		"object-to-create": "TiledBackground",
+																		"layer": "\"rules_conv_2\"",
+																		"x": "544",
+																		"y": "912"
+																	}
+																},
+																{
+																	"id": "set-animation-frame",
+																	"objectClass": "Sprite_Slider",
+																	"sid": 521941591651867,
+																	"parameters": {
+																		"frame-number": "1"
+																	}
+																},
+																{
+																	"id": "set-font-color",
+																	"objectClass": "text_slider_money",
+																	"sid": 857913104143094,
+																	"parameters": {
+																		"color": "rgb(50, 50,50)"
+																	}
+																},
+																{
+																	"id": "set-font-color",
+																	"objectClass": "text_slider_points",
+																	"sid": 212891455753021,
+																	"parameters": {
+																		"color": "rgb(50, 50,50)"
+																	}
+																}
+															],
+															"sid": 663066500793240,
+															"children": [
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "compare-two-values",
+																			"objectClass": "System",
+																			"sid": 688625175314816,
+																			"parameters": {
+																				"first-value": "int(text_slider_points.Text)",
+																				"comparison": 0,
+																				"second-value": "0"
+																			}
+																		},
+																		{
+																			"id": "compare-two-values",
+																			"objectClass": "System",
+																			"sid": 804869498593611,
+																			"parameters": {
+																				"first-value": "int(text_slider_money.Text)",
+																				"comparison": 0,
+																				"second-value": "0"
+																			}
+																		}
+																	],
+																	"actions": [],
+																	"sid": 205141993357453,
+																	"children": [
+																		{
+																			"eventType": "block",
+																			"conditions": [],
+																			"actions": [
+																				{
+																					"id": "set-x",
+																					"objectClass": "Sprite_Slider",
+																					"sid": 263031577828419,
+																					"parameters": {
+																						"x": "544-(440/2)"
+																					}
+																				},
+																				{
+																					"id": "set-instvar-value",
+																					"objectClass": "Sprite_Slider",
+																					"sid": 744610901651196,
+																					"parameters": {
+																						"instance-variable": "type",
+																						"value": "\"Coins\""
+																					}
+																				}
+																			],
+																			"sid": 824456797299324
+																		}
+																	]
+																},
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "else",
+																			"objectClass": "System",
+																			"sid": 598565951074090
+																		}
+																	],
+																	"actions": [],
+																	"sid": 672553496012766,
+																	"children": [
+																		{
+																			"eventType": "block",
+																			"conditions": [],
+																			"actions": [
+																				{
+																					"id": "set-x",
+																					"objectClass": "Sprite_Slider",
+																					"sid": 953227268905204,
+																					"parameters": {
+																						"x": "544-((440/totalAmount)*int(text_slider_points.Text))"
+																					}
+																				},
+																				{
+																					"id": "set-instvar-value",
+																					"objectClass": "Sprite_Slider",
+																					"sid": 353232611059454,
+																					"parameters": {
+																						"instance-variable": "type",
+																						"value": "\"Coins\""
+																					}
+																				}
+																			],
+																			"sid": 200755912665901
+																		}
+																	]
+																},
+																{
+																	"eventType": "block",
+																	"conditions": [],
+																	"actions": [
+																		{
+																			"id": "set-instvar-value",
+																			"objectClass": "Sprite_Slider",
+																			"sid": 905183874834006,
+																			"parameters": {
+																				"instance-variable": "tasso_value",
+																				"value": "int(Text_tasso.Text)"
+																			}
+																		},
+																		{
+																			"id": "set-width",
+																			"objectClass": "TiledBackground2",
+																			"sid": 407317312083784,
+																			"parameters": {
+																				"width": "Sprite_Slider.X-113"
+																			}
+																		}
+																	],
+																	"sid": 253806619138007
+																},
+																{
+																	"eventType": "block",
+																	"conditions": [],
+																	"actions": [
+																		{
+																			"id": "set-width",
+																			"objectClass": "TiledBackground",
+																			"sid": 768232119830975,
+																			"parameters": {
+																				"width": "Family2.X-Sprite_Slider.X"
+																			}
+																		},
+																		{
+																			"id": "set-position",
+																			"objectClass": "text_slider_money",
+																			"sid": 942042183221810,
+																			"parameters": {
+																				"x": "Sprite_Slider.X",
+																				"y": "Self.Y"
+																			}
+																		},
+																		{
+																			"id": "set-position",
+																			"objectClass": "text_slider_points",
+																			"sid": 901540391148947,
+																			"parameters": {
+																				"x": "Sprite_Slider.X",
+																				"y": "Self.Y"
+																			}
+																		},
+																		{
+																			"id": "pin-to-object",
+																			"objectClass": "text_slider_money",
+																			"sid": 698305824666818,
+																			"behaviorType": "Pin",
+																			"parameters": {
+																				"pin-to": "Sprite_Slider",
+																				"mode": "position-angle"
+																			}
+																		},
+																		{
+																			"id": "pin-to-object",
+																			"objectClass": "text_slider_points",
+																			"sid": 948053554243249,
+																			"behaviorType": "Pin",
+																			"parameters": {
+																				"pin-to": "Sprite_Slider",
+																				"mode": "position-angle"
+																			}
+																		}
+																	],
+																	"sid": 746014167092855
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 829650454390363,
+											"parameters": {
+												"first-value": "Function.Param(1)",
+												"comparison": 0,
+												"second-value": "\"change_tasso\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 324549846210427,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 838353632796658,
+													"parameters": {
+														"first-value": "Function.Param(0)",
+														"comparison": 0,
+														"second-value": "\"Coins\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 416084958004553,
+													"parameters": {
+														"variable": "slider_points",
+														"value": "html_total_coins.TextGetText"
+													}
+												}
+											],
+											"sid": 884151900329243
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 687571919839635,
+													"parameters": {
+														"first-value": "Function.Param(0)",
+														"comparison": 0,
+														"second-value": "\"Exp\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 240862579761393,
+													"parameters": {
+														"variable": "slider_points",
+														"value": "html_total_exp.TextGetText"
+													}
+												}
+											],
+											"sid": 397585850842999
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 588450673491645,
+													"parameters": {
+														"first-value": "Function.Param(0)",
+														"comparison": 0,
+														"second-value": "\"Jems\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 339923949992479,
+													"parameters": {
+														"variable": "slider_points",
+														"value": "html_total_jems.TextGetText"
+													}
+												}
+											],
+											"sid": 779979258601483
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 385853887929728,
+													"parameters": {
+														"variable": "slider_money",
+														"value": "html_total_money.TextGetText"
+													}
+												},
+												{
+													"id": "set-text",
+													"objectClass": "text_slider_money",
+													"sid": 190788037200012,
+													"parameters": {
+														"text": "slider_money"
+													}
+												},
+												{
+													"id": "set-text",
+													"objectClass": "text_slider_points",
+													"sid": 602001659809745,
+													"parameters": {
+														"text": "slider_points"
+													}
+												}
+											],
+											"sid": 705878564704466
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 409458846982536,
+													"parameters": {
+														"variable": "MoneyAmount",
+														"value": "(int(text_slider_money.Text)*int(Function.Param(3)))"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 528299744272113,
+													"parameters": {
+														"variable": "totalAmount",
+														"value": "int(MoneyAmount)+(int(text_slider_points.Text))"
+													}
+												}
+											],
+											"sid": 125961710869953
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 838016877665778,
+											"parameters": {
+												"first-value": "Function.Param(1)",
+												"comparison": 1,
+												"second-value": "\"start\""
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 372854686352969,
+											"parameters": {
+												"first-value": "Function.Param(1)",
+												"comparison": 1,
+												"second-value": "\"change_tasso\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 648094771963195,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "execute-javascript",
+													"objectClass": "Browser",
+													"sid": 375378094540113,
+													"parameters": {
+														"javascript": "\"\r\nvar APPO_pnumb ='\"&HTML_listnr_testina.TextGetText&\"';\r\nvar Admin_info = firebase.auth().currentUser.uid;\r\nvar refAdminProd =  firebase.database().ref('Admins/'+ Admin_info +'/products/'+APPO_pnumb+'/rules/conversion/');  \r\nvar Moneyupdate =  refAdminProd.update({'Money':\"&Function.Param(1)&\"});\r\nvar varAdded = refAdminProd.update({'\"&Function.Param(0)&\"':'\"&Function.Param(2)&\"'});\r\n\r\n            var output = document.getElementById('div_totMoney');\r\n            output.innerText = '\"&Function.Param(1)&\"';\r\n           var output_sliderMoney = document.getElementById('div_sliderMoney');\r\n            output_sliderMoney.innerText = '\"&Function.Param(1)&\"';\r\n            var output_Points = document.getElementById('div_tot\"&Function.Param(0)&\"');\r\n            output_Points.innerText = '\"&Function.Param(2)&\"';\r\n            var output_sliderPoints = document.getElementById('div_sliderPoints');\r\n            output_sliderPoints.innerText = '\"&Function.Param(2)&\"';\r\n\r\n\r\n\r\n\""
+													}
+												}
+											],
+											"sid": 732313419622421
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 669063656038050,
+									"parameters": {
+										"object": "Family5",
+										"expression": "Family5.TextGetText",
+										"comparison": 1,
+										"value": "\"-\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 410335424691633,
+							"children": [
+								{
+									"eventType": "variable",
+									"name": "cambio2",
+									"type": "string",
+									"initialValue": "",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 713147854809531
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 207214609578951,
+											"parameters": {
+												"object": "Text_tasso",
+												"expression": "Text_tasso.parrent",
+												"comparison": 0,
+												"value": "Family5.lonk_F"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 139865576724457,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-text",
+													"objectClass": "Text_tasso",
+													"sid": 923279300721426,
+													"parameters": {
+														"text": "Family5.TextGetText"
+													}
+												},
+												{
+													"id": "text-set-text",
+													"objectClass": "Family5",
+													"sid": 150680511159350,
+													"parameters": {
+														"text": "\"-\""
+													}
+												}
+											],
+											"sid": 771264122679243
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 482964558680456,
+													"parameters": {
+														"first-value": "Text_tasso.parrent",
+														"comparison": 0,
+														"second-value": "\"Coins\""
+													}
+												},
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 500073504175015,
+													"parameters": {
+														"first-value": "Text_tasso.start",
+														"comparison": 0,
+														"second-value": "1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-instvar-value",
+													"objectClass": "Text_tasso",
+													"sid": 469734336493891,
+													"parameters": {
+														"instance-variable": "start",
+														"value": "0"
+													}
+												},
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 509424880137016,
+													"parameters": {
+														"name": "\"update\"",
+														"parameter-n": [
+															"Text_tasso.parrent",
+															"\"start\"",
+															"int(Text_tasso.Text)"
+														]
+													}
+												}
+											],
+											"sid": 123957003836998
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "variable",
+							"name": "totalAmount2",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 695340423726396
+						},
+						{
+							"eventType": "variable",
+							"name": "MoneyAmount2",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 590171546430792
+						},
+						{
+							"eventType": "variable",
+							"name": "slider_points2",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 563017246062504
+						},
+						{
+							"eventType": "variable",
+							"name": "slider_money2",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 896556854117196
+						},
+						{
+							"eventType": "variable",
+							"name": "cambio3",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 660951859545615
+						}
+					]
+				}
+			],
+			"sid": 481196810690757
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite_Slider",
+					"sid": 903587178488198,
+					"parameters": {
+						"instance-variable": "step",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite_Slider",
+					"sid": 466173197400465,
+					"parameters": {
+						"instance-variable": "mov",
+						"comparison": 1,
+						"value": "\"-\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "text-set-text",
+					"objectClass": "HTML_var_listner",
+					"sid": 112904200847121,
+					"parameters": {
+						"text": "Touch.X&newline&Sprite_slider.initX"
+					}
+				}
+			],
+			"sid": 861570147569767,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Sprite_Slider",
+							"sid": 819919481224399,
+							"parameters": {
+								"instance-variable": "mov",
+								"comparison": 0,
+								"value": "\"rx\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Sprite_Slider",
+							"sid": 345737653128411,
+							"parameters": {
+								"instance-variable": "mov",
+								"value": "\"-\""
+							}
+						}
+					],
+					"sid": 258102442792255,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 800018422063737,
+									"parameters": {
+										"object": "Sprite25",
+										"expression": "Sprite25.picker",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 449439088891282,
+							"children": [
+								{
+									"eventType": "variable",
+									"name": "money",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 528442552187746
+								},
+								{
+									"eventType": "variable",
+									"name": "score_conv",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 990244121042600
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-x",
+											"objectClass": "Sprite_Slider",
+											"sid": 359367303312643,
+											"parameters": {
+												"x": "Sprite_Slider.initX+( (440/(   (int(text_slider_money.Text)  *int( Sprite_Slider.tasso_value ))+int(text_slider_points.Text) ) )*int(Sprite_Slider.tasso_value) )"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Sprite_Slider",
+											"sid": 200154837329890,
+											"parameters": {
+												"instance-variable": "initX",
+												"value": "Sprite_Slider.X"
+											}
+										}
+									],
+									"sid": 324141917364339,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-text",
+													"objectClass": "text_slider_money",
+													"sid": 829424477623601,
+													"parameters": {
+														"text": "int(text_slider_money.Text)+1"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 450374625687039,
+													"parameters": {
+														"variable": "money",
+														"value": "int(text_slider_money.Text)"
+													}
+												}
+											],
+											"sid": 910688845052357
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 819342300739626,
+													"parameters": {
+														"variable": "score_conv",
+														"value": "int(text_slider_points.Text)-int(Sprite_Slider.tasso_value )"
+													}
+												},
+												{
+													"id": "set-text",
+													"objectClass": "text_slider_points",
+													"sid": 158184552255106,
+													"parameters": {
+														"text": "int(text_slider_points.Text)-int(Sprite_Slider.tasso_value )"
+													}
+												}
+											],
+											"sid": 787650340769183
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 955259720982697,
+													"parameters": {
+														"name": "\"update\"",
+														"parameter-n": [
+															"Sprite_Slider.type",
+															"money",
+															"score_conv",
+															"\"up\""
+														]
+													}
+												}
+											],
+											"sid": 187098722369984
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Sprite_Slider",
+							"sid": 213968902092502,
+							"parameters": {
+								"instance-variable": "mov",
+								"comparison": 0,
+								"value": "\"lx\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Sprite_Slider",
+							"sid": 980058281429024,
+							"parameters": {
+								"instance-variable": "mov",
+								"value": "\"-\""
+							}
+						}
+					],
+					"sid": 255962761351292,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 969617411482138,
+									"parameters": {
+										"object": "Sprite25",
+										"expression": "Sprite25.picker",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 503216403159030,
+							"children": [
+								{
+									"eventType": "variable",
+									"name": "money",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 915584901165523
+								},
+								{
+									"eventType": "variable",
+									"name": "score_conv",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 659965794353525
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-x",
+											"objectClass": "Sprite_Slider",
+											"sid": 236837159484842,
+											"parameters": {
+												"x": "Sprite_Slider.initX-( (440/(   (int(text_slider_money.Text)  *int( Sprite_Slider.tasso_value ))+int(text_slider_points.Text) ) )*int(Sprite_Slider.tasso_value) )"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Sprite_Slider",
+											"sid": 445155244848050,
+											"parameters": {
+												"instance-variable": "initX",
+												"value": "Sprite_Slider.X"
+											}
+										}
+									],
+									"sid": 101360230404535,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-text",
+													"objectClass": "text_slider_money",
+													"sid": 480670723636779,
+													"parameters": {
+														"text": "int(text_slider_money.Text)-1"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 872001524239448,
+													"parameters": {
+														"variable": "money",
+														"value": "int(text_slider_money.Text)"
+													}
+												}
+											],
+											"sid": 632805275507069
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 820099464457914,
+													"parameters": {
+														"variable": "score_conv",
+														"value": "int(text_slider_points.Text)+int(Sprite_Slider.tasso_value )"
+													}
+												},
+												{
+													"id": "set-text",
+													"objectClass": "text_slider_points",
+													"sid": 792937382831615,
+													"parameters": {
+														"text": "int(text_slider_points.Text)+int(Sprite_Slider.tasso_value )"
+													}
+												}
+											],
+											"sid": 139875101930163
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 390347172041653,
+													"parameters": {
+														"name": "\"update\"",
+														"parameter-n": [
+															"Sprite_Slider.type",
+															"money",
+															"score_conv",
+															"\"up\""
+														]
+													}
+												}
+											],
+											"sid": 688612283976957
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "TiledBackground2",
+							"sid": 954779910682615,
+							"parameters": {
+								"width": "Sprite_Slider.X-113"
+							}
+						}
+					],
+					"sid": 344024423392540
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "Family2",
+							"sid": 411287778651420,
+							"parameters": {
+								"width": "Family2.X-Sprite_Slider.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Sprite_Slider",
+							"sid": 344089131220253,
+							"parameters": {
+								"instance-variable": "step",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 784536064060946
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-end",
+					"objectClass": "Touch",
+					"sid": 967762989965904
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite_Slider",
+					"sid": 852504400795844,
+					"parameters": {
+						"instance-variable": "step",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 651263250003723,
+					"parameters": {
+						"group-name": "\"mov_slid\"",
+						"state": "deactivated"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Sprite_Slider",
+					"sid": 785112535554147,
+					"parameters": {
+						"instance-variable": "step",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 417263877078419
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 897691393971067,
+					"parameters": {
+						"object": "Sprite_Slider"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 813510385627718,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Sprite_Slider",
+							"sid": 369511954215243,
+							"parameters": {
+								"instance-variable": "initX",
+								"value": "Sprite_Slider.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Sprite_Slider",
+							"sid": 771102214794381,
+							"parameters": {
+								"instance-variable": "step",
+								"value": "2"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 993185410926799,
+							"parameters": {
+								"group-name": "\"mov_slid\"",
+								"state": "activated"
+							}
+						}
+					],
+					"sid": 941672137368118
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 214939692523572,
+					"parameters": {
+						"object": "Sprite_Coins"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite_Coins",
+					"sid": 603223436236190,
+					"parameters": {
+						"instance-variable": "pos",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "Sprite20",
+					"sid": 204630938941571,
+					"parameters": {
+						"angle": "-35"
+					}
+				}
+			],
+			"sid": 830632858197671,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "totalAmount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 434402059149131
+				},
+				{
+					"eventType": "variable",
+					"name": "MoneyAmount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 834456870136357
+				},
+				{
+					"eventType": "variable",
+					"name": "slider_points",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 440822484345676
+				},
+				{
+					"eventType": "variable",
+					"name": "slider_money",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 270040561912292
+				},
+				{
+					"eventType": "variable",
+					"name": "cambio",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 756136131683233
+				},
+				{
+					"eventType": "variable",
+					"name": "call_function_trigger",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 501185626198308
+				},
+				{
+					"eventType": "variable",
+					"name": "stop_loop",
+					"type": "number",
+					"initialValue": "1000",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 276732600361903
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 608682720123481,
+							"parameters": {
+								"object": "Sprite_selettore_coins",
+								"expression": "Sprite_selettore_coins.parent",
+								"comparison": 0,
+								"value": "\"1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-y",
+							"objectClass": "Sprite_selettore_coins",
+							"sid": 104412756502103,
+							"parameters": {
+								"y": "Sprite_Coins.Y"
+							}
+						}
+					],
+					"sid": 710305823220743,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Sprite_selettore_coins",
+									"sid": 703650328851078,
+									"parameters": {
+										"object": "Text_tasso"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "Sprite_Coins",
+									"sid": 793510690894601,
+									"parameters": {
+										"width": "80",
+										"height": "80"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Sprite_Slider",
+									"sid": 330879509563220,
+									"parameters": {
+										"instance-variable": "tasso_value",
+										"value": "int(Text_tasso.text)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Sprite_Slider",
+									"sid": 576053391143596,
+									"parameters": {
+										"instance-variable": "type",
+										"value": "\"Coins\""
+									}
+								},
+								{
+									"id": "execute-javascript",
+									"objectClass": "Browser",
+									"sid": 483530684114571,
+									"disabled": true,
+									"parameters": {
+										"javascript": "\"\r\n\r\nvar refTassi = firebase.database().ref('tassiCambio/');\r\nvar ref_cambioCoins = refTassi.child('Coins/');      \r\n ref_cambioCoins.once('value')\r\n   .then(function(snapshot) {\r\n            var result = snapshot.val();\r\n        \r\n            var output = document.getElementById('div_tassoCambio');\r\n            output.innerText = result;\r\n   });\r\n\r\n\r\n\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 366286245870070,
+									"disabled": true,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 775812107372713,
+									"parameters": {
+										"name": "\"update\"",
+										"parameter-n": [
+											"Sprite_Slider.type",
+											"\"change_tasso\"",
+											"cambio",
+											"int(Text_tasso.Text)"
+										]
+									}
+								}
+							],
+							"sid": 692732763240922
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "execute-javascript",
+							"objectClass": "Browser",
+							"sid": 941057004297843,
+							"parameters": {
+								"javascript": "\"\r\nvar refUsers = firebase.database().ref('tassiCambio/');\r\nvar refUsersTotCoins = refUsers.child('Coins');      \r\n refUsersTotCoins.once('value')\r\n   .then(function(snapshot) {\r\n            var result = snapshot.val();\r\n        \r\n            var output = document.getElementById('div_tasso_cambio');\r\n            output.innerText = result;\r\n   });\r\n\r\n\""
+							}
+						}
+					],
+					"sid": 328402563800608,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 968652622587120,
+					"parameters": {
+						"object": "Sprite_Exp"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite_Exp",
+					"sid": 421330296179793,
+					"parameters": {
+						"instance-variable": "pos",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "Sprite20",
+					"sid": 782060719066834,
+					"parameters": {
+						"angle": "0"
+					}
+				}
+			],
+			"sid": 789191293929779,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "cambio",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 938228840706620
+				},
+				{
+					"eventType": "variable",
+					"name": "totalAmount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 289555394907978
+				},
+				{
+					"eventType": "variable",
+					"name": "MoneyAmount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 317890760944998
+				},
+				{
+					"eventType": "variable",
+					"name": "call_function_trigger",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 219543957566960
+				},
+				{
+					"eventType": "variable",
+					"name": "stop_loop",
+					"type": "number",
+					"initialValue": "1000",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 552710087434340
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 906567965797205,
+							"parameters": {
+								"object": "Sprite_selettore_coins",
+								"expression": "Sprite_selettore_coins.parent",
+								"comparison": 0,
+								"value": "\"1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-y",
+							"objectClass": "Sprite_selettore_coins",
+							"sid": 620589479986039,
+							"parameters": {
+								"y": "Sprite_Exp.Y"
+							}
+						}
+					],
+					"sid": 779816435262587,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Sprite_selettore_coins",
+									"sid": 936106969708738,
+									"parameters": {
+										"object": "Text_tasso"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "Sprite_Exp",
+									"sid": 499301215575930,
+									"parameters": {
+										"width": "76",
+										"height": "76"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Sprite_Slider",
+									"sid": 535329055794031,
+									"parameters": {
+										"instance-variable": "type",
+										"value": "\"Exp\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Sprite_Slider",
+									"sid": 389895154110043,
+									"parameters": {
+										"instance-variable": "tasso_value",
+										"value": "int(Text_tasso.text)"
+									}
+								},
+								{
+									"id": "execute-javascript",
+									"objectClass": "Browser",
+									"sid": 904839781146853,
+									"disabled": true,
+									"parameters": {
+										"javascript": "\"\r\n\r\nvar refTassi = firebase.database().ref('tassiCambio/');\r\nvar ref_cambioCoins = refTassi.child('Exp/');      \r\n ref_cambioCoins.once('value')\r\n   .then(function(snapshot) {\r\n            var result = snapshot.val();\r\n        \r\n            var output = document.getElementById('div_tassoCambio');\r\n            output.innerText = result;\r\n   });\r\n\r\n\r\n\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 341241608854097,
+									"disabled": true,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 872220856370929,
+									"parameters": {
+										"name": "\"update\"",
+										"parameter-n": [
+											"Sprite_Slider.type",
+											"\"change_tasso\"",
+											"cambio",
+											"int(Text_tasso.Text)"
+										]
+									}
+								}
+							],
+							"sid": 306143677727644
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "execute-javascript",
+							"objectClass": "Browser",
+							"sid": 161941857308232,
+							"parameters": {
+								"javascript": "\"\r\nvar refUsers = firebase.database().ref('tassiCambio/');\r\nvar refUsersTotCoins = refUsers.child('Exp');      \r\n refUsersTotCoins.once('value')\r\n   .then(function(snapshot) {\r\n            var result = snapshot.val();\r\n        \r\n            var output = document.getElementById('div_tasso_cambio');\r\n            output.innerText = result;\r\n   });\r\n\r\n\""
+							}
+						}
+					],
+					"sid": 506151884803073,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 666925602191467,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "Text_tasso",
+									"sid": 209723902785707,
+									"parameters": {
+										"unique-id": "66"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 746787036551960,
+							"disabled": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 956847718473459,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "Text_indietro",
+									"sid": 815018300161331,
+									"parameters": {
+										"unique-id": "71"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 127413709611728,
+							"disabled": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 379323289453774,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "Text_indietro",
+									"sid": 816175480124281,
+									"parameters": {
+										"unique-id": "72"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 957728822263052,
+									"parameters": {
+										"variable": "totalAmount",
+										"value": "MoneyAmount+int(Text_indietro.Text)"
+									}
+								}
+							],
+							"sid": 320760850750061,
+							"disabled": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-all",
+											"objectClass": "System",
+											"sid": 959952014050627,
+											"parameters": {
+												"object": "Family2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "Family2",
+											"sid": 990054145284953
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 292093050657705,
+											"parameters": {
+												"object-to-create": "TiledBackground3",
+												"layer": "2",
+												"x": "549",
+												"y": "868"
+											}
+										},
+										{
+											"id": "set-width",
+											"objectClass": "TiledBackground3",
+											"sid": 494647943778350,
+											"parameters": {
+												"width": "(440/totalAmount)*int(Text_indietro.Text)"
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Sprite_Slider",
+											"sid": 556081175201836,
+											"parameters": {
+												"x": "549-((440/totalAmount)*int(Text_indietro.Text))"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Sprite_Slider",
+											"sid": 363770585269757,
+											"parameters": {
+												"instance-variable": "type",
+												"value": "\"totExp\""
+											}
+										}
+									],
+									"sid": 384319542644622,
+									"disabled": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 741280284155404,
+					"parameters": {
+						"object": "Sprite_Jems"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite_Jems",
+					"sid": 635182929148166,
+					"parameters": {
+						"instance-variable": "pos",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "Sprite20",
+					"sid": 975576212901476,
+					"parameters": {
+						"angle": "35"
+					}
+				}
+			],
+			"sid": 154097508054879,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "call_function_trigger",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 601570521103505
+				},
+				{
+					"eventType": "variable",
+					"name": "stop_loop",
+					"type": "number",
+					"initialValue": "1000",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 189297274767078
+				},
+				{
+					"eventType": "variable",
+					"name": "cambio",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 571058051671521
+				},
+				{
+					"eventType": "variable",
+					"name": "totalAmount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 320270750490872
+				},
+				{
+					"eventType": "variable",
+					"name": "MoneyAmount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 620836166036434
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 274782465644363,
+							"parameters": {
+								"object": "Sprite_selettore_coins",
+								"expression": "Sprite_selettore_coins.parent",
+								"comparison": 0,
+								"value": "\"1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-y",
+							"objectClass": "Sprite_selettore_coins",
+							"sid": 565292260599031,
+							"parameters": {
+								"y": "Sprite_Jems.Y"
+							}
+						}
+					],
+					"sid": 377517479201648,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Sprite_selettore_coins",
+									"sid": 743199296061049,
+									"parameters": {
+										"object": "Text_tasso"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "Sprite_Jems",
+									"sid": 386317576584949,
+									"parameters": {
+										"width": "66",
+										"height": "66"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Sprite_Slider",
+									"sid": 457748367093315,
+									"parameters": {
+										"instance-variable": "type",
+										"value": "\"Jems\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Sprite_Slider",
+									"sid": 923687605771991,
+									"parameters": {
+										"instance-variable": "tasso_value",
+										"value": "int(Text_tasso.text)"
+									}
+								},
+								{
+									"id": "execute-javascript",
+									"objectClass": "Browser",
+									"sid": 555165694998462,
+									"disabled": true,
+									"parameters": {
+										"javascript": "\"\r\n\r\nvar refTassi = firebase.database().ref('tassiCambio/');\r\nvar ref_cambioCoins = refTassi.child('Jems/');      \r\n ref_cambioCoins.once('value')\r\n   .then(function(snapshot) {\r\n            var result = snapshot.val();\r\n        \r\n            var output = document.getElementById('div_tassoCambio');\r\n            output.innerText = result;\r\n   });\r\n\r\n\r\n\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 480804985592512,
+									"disabled": true,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 672621745454035,
+									"parameters": {
+										"name": "\"update\"",
+										"parameter-n": [
+											"Sprite_Slider.type",
+											"\"change_tasso\"",
+											"cambio",
+											"int(Text_tasso.Text)"
+										]
+									}
+								}
+							],
+							"sid": 569505964083051
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "execute-javascript",
+							"objectClass": "Browser",
+							"sid": 617039860290886,
+							"parameters": {
+								"javascript": "\"\r\nvar refUsers = firebase.database().ref('tassiCambio/');\r\nvar refUsersTotCoins = refUsers.child('Jems');      \r\n refUsersTotCoins.once('value')\r\n   .then(function(snapshot) {\r\n            var result = snapshot.val();\r\n        \r\n            var output = document.getElementById('div_tasso_cambio');\r\n            output.innerText = result;\r\n   });\r\n\r\n\""
+							}
+						}
+					],
+					"sid": 717592171329886,
+					"disabled": true
+				}
+			]
+		}
+	],
+	"sid": 864941405801953
+}

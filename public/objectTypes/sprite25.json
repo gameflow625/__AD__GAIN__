@@ -1,0 +1,68 @@
+{
+	"name": "Sprite25",
+	"plugin-id": "Sprite",
+	"sid": 637424622274188,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "picker",
+			"type": "number",
+			"desc": "",
+			"sid": 235168762415677
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 439,
+						"height": 37,
+						"originX": 0.501139,
+						"originY": 0.513514,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\rect2581.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 68,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 180,
+						"height": 64,
+						"originX": 1.322222338888889,
+						"originY": 0.50781278125,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\rect2581.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 66,
+						"collisionPoly": {
+							"points": [
+								0.1,
+								0.2109375,
+								0.9,
+								0.2109375,
+								0.9,
+								0.7890625,
+								0.1,
+								0.7890625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 727953856821331,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

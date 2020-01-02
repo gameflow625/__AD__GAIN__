@@ -1,0 +1,10 @@
+{
+	"name": "Forge",
+	"plugin-id": "Massive_Cube_Forge",
+	"sid": 880664009567021,
+	"singleglobal-inst": {
+		"type": "Forge",
+		"properties": {},
+		"uid": 68
+	}
+}

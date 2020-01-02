@@ -1,0 +1,45 @@
+{
+	"name": "Tiled_Back_panel",
+	"plugin-id": "TiledBg",
+	"sid": 431721567572091,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "steps",
+			"type": "number",
+			"desc": "",
+			"sid": 556930861252033
+		},
+		{
+			"name": "map_list",
+			"type": "number",
+			"desc": "",
+			"sid": 618213837623401
+		},
+		{
+			"name": "prod_num",
+			"type": "string",
+			"desc": "",
+			"sid": 398229921335099
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "lunarray_LiteTween",
+			"name": "LiteTween",
+			"sid": 492901856998711
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 256,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 48,
+		"useCollisionPoly": true
+	}
+}

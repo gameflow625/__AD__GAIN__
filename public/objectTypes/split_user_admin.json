@@ -1,0 +1,89 @@
+{
+	"name": "split_user_admin",
+	"plugin-id": "Sprite",
+	"sid": 983402194313852,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 333,
+						"height": 193,
+						"originX": 0.501502,
+						"originY": 0.502591,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\admin_btn.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 41,
+						"collisionPoly": {
+							"points": [
+								0.0268199,
+								0.0463576,
+								0.498084,
+								0,
+								0.97318,
+								0.0463576,
+								1,
+								0.496689,
+								0.97318,
+								0.953642,
+								0.498084,
+								1,
+								0.0268199,
+								0.953642,
+								0,
+								0.496689
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 0
+					},
+					{
+						"width": 333,
+						"height": 193,
+						"originX": 0.501502,
+						"originY": 0.502591,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\user_btn.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 42,
+						"collisionPoly": {
+							"points": [
+								0.0268199,
+								0.0463576,
+								0.498084,
+								0,
+								0.97318,
+								0.0463576,
+								1,
+								0.496689,
+								0.97318,
+								0.953642,
+								0.498084,
+								1,
+								0.0268199,
+								0.953642,
+								0,
+								0.496689
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 0
+					}
+				],
+				"sid": 404090725153672,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

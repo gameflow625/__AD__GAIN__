@@ -1,0 +1,64 @@
+{
+	"name": "Sprite_selettore_coins",
+	"plugin-id": "Sprite",
+	"sid": 440919519762365,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "parent",
+			"type": "string",
+			"desc": "",
+			"sid": 929443269392534
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 277,
+						"height": 155,
+						"originX": 0.501805,
+						"originY": 0.503226,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\selettore_coins.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 59,
+						"collisionPoly": {
+							"points": [
+								0.0288809,
+								0.0516129,
+								0.498195,
+								0,
+								0.971119,
+								0.0516129,
+								1,
+								0.496774,
+								0.971119,
+								0.948387,
+								0.498195,
+								1,
+								0.0288809,
+								0.948387,
+								0,
+								0.496774
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 570816860055753,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

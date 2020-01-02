@@ -1,0 +1,2248 @@
+{
+	"name": "Event login",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "adm_data_obj",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 302097672970711
+		},
+		{
+			"eventType": "variable",
+			"name": "user_mode",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 757134181178168
+		},
+		{
+			"eventType": "variable",
+			"name": "trigMomento",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 651650474791187
+		},
+		{
+			"eventType": "variable",
+			"name": "trigLayout",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 865523442555777
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 918638881987164,
+					"parameters": {
+						"key": "\"trig\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 655399942812550,
+			"disabled": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "LocalStorage",
+							"sid": 920150060466523,
+							"parameters": {
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 800659961393502,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "script",
+							"script": "firebase.auth().signOut().then(function() {\n  // Sign-out successful.\n}).catch(function(error) {\n  // An error happened.\n});",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "LocalStorage",
+							"sid": 321085198301020,
+							"parameters": {
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 211204289780718,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 332736061141928,
+									"parameters": {
+										"variable": "trigMomento",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 504094763082095,
+							"disabled": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 827611436361039,
+					"parameters": {
+						"key": "\"trig\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 361488390592120,
+			"disabled": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "LocalStorage",
+							"sid": 604051537536847,
+							"parameters": {
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 196181841983825,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "script",
+							"script": "firebase.auth().signOut().then(function() {\n  // Sign-out successful.\n}).catch(function(error) {\n  // An error happened.\n});",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "LocalStorage",
+							"sid": 668385773088017,
+							"parameters": {
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 631273416883106,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 129358089755148,
+									"parameters": {
+										"variable": "trigMomento",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 170483473980262,
+							"disabled": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "variable",
+			"name": "vs",
+			"type": "string",
+			"initialValue": "-§§-§§-§§-§§-§§-§§-§§-§§-§§-",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 969559380122844
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 205499180417364,
+					"parameters": {
+						"name": "\"iter_mezzo\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 307214447055157,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 914772549733156,
+							"parameters": {
+								"name": "\"a\"",
+								"start-index": "1",
+								"end-index": "int(Function.Param(0))"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 148470386035185,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "execute-javascript",
+									"objectClass": "Browser",
+									"sid": 796036302702329,
+									"parameters": {
+										"javascript": "\"var iiad = firebase.auth().currentUser.uid; var extractor=firebase.database().ref('/PublicProducts/'+\"&Function.Param(1)&\"+'/'+\"&loopindex&\");\r\n\r\n\nvar Title1 = extractor.child('Title').once('value').then(function(res){document.getElementById('p1').innerText= res.val()  });\nvar rulesCon = extractor.child('rules/conversion/');\nvar extrCoin = rulesCon.child('Coins').once('value').then(function(res2){document.getElementById('p2').innerText= res2.val()});\nvar rulesJems = extractor.child('rules/conversion/');\nvar extrJems = rulesJems.child('Jems').once('value').then(function(res3){document.getElementById('p4').innerText= res3.val()});\nvar img = extractor.child('prodInfo');\nvar extrImg = img.child('img').once('value').then(function(res4){document.getElementById('p8').innerText=  res4.val()});\nvar rulesExp = extractor.child('rules/conversion/');\nvar extrExp = rulesExp.child('Exp').once('value').then(function(res5){document.getElementById('p5').innerText= res5.val()});\nvar rulesMo = extractor.child('rules/conversion/');\nvar extrMo = rulesMo.child('Money').once('value').then(function(res6){document.getElementById('p6').innerText= res6.val()});\n\r\nvar rulesnam   = extractor.child('shopInfo/name/')\r\nrulesnam.once('value').then(function(res7)\r\n{document.getElementById('p7').innerText= res7.val()});\nc2_callFunction('pipo')\n\""
+									}
+								},
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 917104347725324,
+									"parameters": {
+										"type": "log",
+										"message": "\"ac_sub_\"&Function.Param(0)"
+									}
+								},
+								{
+									"id": "wait-for-signal",
+									"objectClass": "System",
+									"sid": 265264245328002,
+									"parameters": {
+										"tag": "\"i_g\""
+									}
+								}
+							],
+							"sid": 549602193808086,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 966417591694871,
+											"parameters": {
+												"first-value": "loopindex",
+												"comparison": 0,
+												"second-value": "Function.Param(0)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "signal",
+											"objectClass": "System",
+											"sid": 828111515253040,
+											"parameters": {
+												"tag": "\"end_g\""
+											}
+										}
+									],
+									"sid": 962214123706253
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 916460569641097,
+					"parameters": {
+						"name": "\"iter\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 531271615155025,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "Function",
+							"sid": 750671584054612,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "\"user\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "log",
+							"objectClass": "Browser",
+							"sid": 947601860951703,
+							"parameters": {
+								"type": "log",
+								"message": "\"start     LOOOP !!!!!!!!!!!!\""
+							}
+						}
+					],
+					"sid": 107686965709625,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 542802567641011,
+									"parameters": {
+										"name": "\"a\"",
+										"start-index": "1",
+										"end-index": "Function.Param(1)+1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 536198093465915,
+							"disabled": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "execute-javascript",
+											"objectClass": "Browser",
+											"sid": 594184570205238,
+											"parameters": {
+												"javascript": "\"var iiad = firebase.auth().currentUser.uid; var extractor=firebase.database().ref('/PublicProducts/'+\"&loopindex&\"+'/');\r\nextractor.once('value').then(function(snapi){\r\n\r\n\r\nc2_callFunction('iter_mezzo',[snapi.numChild(),\"&loopindex&\"]);\r\n});\r\n\"\r\n"
+											}
+										},
+										{
+											"id": "wait-for-signal",
+											"objectClass": "System",
+											"sid": 697212049230000,
+											"parameters": {
+												"tag": "\"end_g\""
+											}
+										}
+									],
+									"sid": 840637357958295,
+									"disabled": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 618980317465831,
+							"parameters": {
+								"name": "\"a\"",
+								"start-index": "1",
+								"end-index": "Function.Param(0)"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 827047888742329,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "execute-javascript",
+									"objectClass": "Browser",
+									"sid": 283436094139630,
+									"parameters": {
+										"javascript": "\"var iiad = firebase.auth().currentUser.uid; var extractor=firebase.database().ref('/Admins/'+ iiad +'/products/'+\"&loopindex&\"+'/');\n\nvar Title1 = extractor.child('Title').once('value').then(function(res){document.getElementById('p2').innerText= res.val()  });\nvar rulesCon = extractor.child('rules/conversion/');\nvar extrCoin = rulesCon.child('Coins').once('value').then(function(res2){document.getElementById('p3').innerText= res2.val()});\nvar rulesJems = extractor.child('rules/conversion/');\nvar extrJems = rulesJems.child('Jems').once('value').then(function(res3){document.getElementById('p4').innerText= res3.val()});\nvar img = extractor.child('prodInfo');\nvar extrImg = img.child('img').once('value').then(function(res4){document.getElementById('p8').innerText=  res4.val()});\nvar rulesExp = extractor.child('rules/conversion/');\nvar extrExp = rulesExp.child('Exp').once('value').then(function(res5){document.getElementById('p5').innerText= res5.val()});\nvar rulesMo = extractor.child('rules/conversion/');\nvar extrMo = rulesMo.child('Money').once('value').then(function(res6){document.getElementById('p6').innerText= res6.val()});\nvar rules_period =extractor.child ('rules/');\nvar ExtrPeriod = rules_period.child('period').once('value').then(function(res7){document.getElementById('p7').innerText=  res7.val()});\nvar shopInfoBBox = extractor.child('/shopInfo/');\nvar ExtrBBox = shopInfoBBox.child('bbox').once('value').then(function(res8){document.getElementById('p9').innerText=  '\"&Function.Param(0)&\"';   });\n\ndocument.getElementById('p1').innerText = '\"&loopindex&\"';\r\n\r\nc2_callFunction('popi')\n\""
+									}
+								},
+								{
+									"id": "wait-for-signal",
+									"objectClass": "System",
+									"sid": 214935974309008,
+									"parameters": {
+										"tag": "\"i_g\""
+									}
+								}
+							],
+							"sid": 714167771782247,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 834765276070601,
+											"parameters": {
+												"first-value": "loopindex",
+												"comparison": 0,
+												"second-value": "Function.Param(0)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "execute-javascript",
+											"objectClass": "Browser",
+											"sid": 252239046207249,
+											"parameters": {
+												"javascript": "\"var admin_info = firebase.auth().currentUser.uid;c2_callFunction('check_go',[1,admin_info])\""
+											}
+										}
+									],
+									"sid": 824859286510894
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 125456861978922,
+					"parameters": {
+						"name": "\"pipo\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 814659413227619,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 679152202669480,
+							"parameters": {
+								"first-value": "HTML_pr1.TextGetText",
+								"comparison": 0,
+								"second-value": "tokenat(vs,0,\"§§\")"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 559205443167092,
+							"parameters": {
+								"first-value": "HTML_pr2.TextGetText",
+								"comparison": 0,
+								"second-value": "tokenat(vs,1,\"§§\")"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 264790937685631,
+							"parameters": {
+								"first-value": "HTML_pr7.TextGetText",
+								"comparison": 0,
+								"second-value": "tokenat(vs,6,\"§§\")"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "log",
+							"objectClass": "Browser",
+							"sid": 318244071044736,
+							"parameters": {
+								"type": "log",
+								"message": "\"etretr etr etre tre tr etre \""
+							}
+						}
+					],
+					"sid": 872722603738314,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 952319458430057,
+									"parameters": {
+										"variable": "vs",
+										"value": "HTML_pr1.TextGetText&\"§§\"&HTML_pr2.TextGetText&\"§§\"&HTML_pr7.TextGetText&\"§§\""
+									}
+								}
+							],
+							"sid": 504672026138384
+						},
+						{
+							"eventType": "variable",
+							"name": "Conv",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 242327936934071
+						},
+						{
+							"eventType": "variable",
+							"name": "Conv2",
+							"type": "string",
+							"initialValue": "Coins,Jems,Exp,Money",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 233598034948109
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 527786633712241,
+									"parameters": {
+										"first-value": "HTML_pr1.TextGetText",
+										"comparison": 1,
+										"second-value": "\"\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 714904227053119,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for",
+											"objectClass": "System",
+											"sid": 953518805507767,
+											"parameters": {
+												"name": "\"a\"",
+												"start-index": "0+3",
+												"end-index": "tokencount(Conv2,\",\")+2"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 236307182472814,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-comparison",
+													"objectClass": "System",
+													"sid": 559244683168192,
+													"parameters": {
+														"object": "Family_data_label",
+														"expression": "Family_data_label.HTMLgetID",
+														"comparison": 0,
+														"value": "\"p\"&loopindex"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 478604003695519,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 816872721819925,
+															"parameters": {
+																"first-value": "int(Family_data_label.TextGetText)",
+																"comparison": 1,
+																"second-value": "int(0)"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "add-to-eventvar",
+															"objectClass": "System",
+															"sid": 571053162060133,
+															"parameters": {
+																"variable": "Conv",
+																"value": "tokenat(Conv2,loopindex(\"a\")-3,\",\")&\":   \"&Family_data_label.TextGetText"
+															}
+														}
+													],
+													"sid": 444686399984999
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 995096486167965,
+									"parameters": {
+										"variable": "adm_data_obj",
+										"value": "\"A  \"&HTML_pr7.TextGetText&\"  Promo's  \"&newline&\"Title :  \"&HTML_pr1.TextGetText&newline&\"Value: \"&Conv&newline&\"____________\"&newline"
+									}
+								},
+								{
+									"id": "signal",
+									"objectClass": "System",
+									"sid": 759837664396264,
+									"parameters": {
+										"tag": "\"i_g\""
+									}
+								}
+							],
+							"sid": 863495729505263
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 934437526233784,
+					"parameters": {
+						"name": "\"popi\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 975636175585498,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 954408540291390,
+							"parameters": {
+								"variable": "vs",
+								"value": "HTML_pr1.TextGetText&\"§§\"&HTML_pr2.TextGetText&\"§§\"&HTML_pr3.TextGetText&\"§§\"&HTML_pr4.TextGetText&\"§§\"&HTML_pr5.TextGetText&\"§§\"&HTML_pr6.TextGetText&\"§§\"&HTML_pr7.TextGetText&\"§§\"&HTML_pr8.TextGetText&\"§§\"&HTML_pr9_TPC.TextGetText&\"§§\""
+							}
+						}
+					],
+					"sid": 325967195984536
+				},
+				{
+					"eventType": "variable",
+					"name": "Conv",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 201121604447075
+				},
+				{
+					"eventType": "variable",
+					"name": "Conv2",
+					"type": "string",
+					"initialValue": "Coins,Jems,Exp,Money",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 398631864239731
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 620653270005904,
+							"parameters": {
+								"first-value": "HTML_pr1.TextGetText",
+								"comparison": 1,
+								"second-value": "\"\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 673908058766898,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 756878290725084,
+									"parameters": {
+										"name": "\"a\"",
+										"start-index": "0+3",
+										"end-index": "tokencount(Conv2,\",\")+2"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 542692361598430,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 668078426739808,
+											"parameters": {
+												"object": "Family_data_label",
+												"expression": "Family_data_label.HTMLgetID",
+												"comparison": 0,
+												"value": "\"p\"&loopindex"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 636988497750529,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 966576346788989,
+													"parameters": {
+														"first-value": "int(Family_data_label.TextGetText)",
+														"comparison": 1,
+														"second-value": "int(0)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 821904631454372,
+													"parameters": {
+														"variable": "Conv",
+														"value": "tokenat(Conv2,loopindex(\"a\")-3,\",\")&\":   \"&Family_data_label.TextGetText"
+													}
+												}
+											],
+											"sid": 587174315281660
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 727043372622082,
+							"parameters": {
+								"variable": "adm_data_obj",
+								"value": "\"Promo n.  \"&HTML_pr1.TextGetText&newline&\"Title :  \"&HTML_pr2.TextGetText&newline&\"Value \"&Conv&newline&\"Period : \"&HTML_pr7.TextGetText&newline&\"____________________\"&newline"
+							}
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 421622392125548,
+							"parameters": {
+								"tag": "\"i_g\""
+							}
+						}
+					],
+					"sid": 896295936908877
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 527295775816716,
+							"parameters": {
+								"first-value": "user_mode",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 621427275926780,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 495885302223633,
+									"parameters": {
+										"first-value": "HTML_pr1.TextGetText",
+										"comparison": 0,
+										"second-value": "HTML_pr9_TPC.TextGetText"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "execute-javascript",
+									"objectClass": "Browser",
+									"sid": 888555025071004,
+									"parameters": {
+										"javascript": "\"var admin_info = firebase.auth().currentUser.uid;c2_callFunction('check_go',[1,admin_info])\""
+									}
+								}
+							],
+							"sid": 261466961005449,
+							"disabled": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 570932877202922,
+							"parameters": {
+								"first-value": "HTML_pr1.TextGetText",
+								"comparison": 0,
+								"second-value": "tokenat(vs,0,\"§§\")"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 813586793400362,
+							"parameters": {
+								"first-value": "HTML_pr2.TextGetText",
+								"comparison": 0,
+								"second-value": "tokenat(vs,1,\"§§\")"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 654230003854476,
+							"parameters": {
+								"first-value": "HTML_pr3.TextGetText",
+								"comparison": 0,
+								"second-value": "tokenat(vs,2,\"§§\")"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 661821336018145,
+							"parameters": {
+								"first-value": "HTML_pr4.TextGetText",
+								"comparison": 0,
+								"second-value": "tokenat(vs,3,\"§§\")"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 961510919822398,
+							"parameters": {
+								"first-value": "HTML_pr5.TextGetText",
+								"comparison": 0,
+								"second-value": "tokenat(vs,4,\"§§\")"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 313849770613335,
+							"parameters": {
+								"first-value": "HTML_pr6.TextGetText",
+								"comparison": 0,
+								"second-value": "tokenat(vs,5,\"§§\")"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 146275990426989,
+							"parameters": {
+								"first-value": "HTML_pr7.TextGetText",
+								"comparison": 0,
+								"second-value": "tokenat(vs,6,\"§§\")"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 486820308315684,
+							"parameters": {
+								"first-value": "HTML_pr8.TextGetText",
+								"comparison": 0,
+								"second-value": "tokenat(vs,7,\"§§\")"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 569825219995551,
+							"parameters": {
+								"first-value": "HTML_pr9_TPC.TextGetText",
+								"comparison": 0,
+								"second-value": "tokenat(vs,8,\"§§\")"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 672419220867506
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 202001680188978,
+					"parameters": {
+						"name": "\"img\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 821216019923623,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "img_user",
+							"sid": 894352195850336,
+							"behaviorType": "LiteTween",
+							"parameters": {
+								"stop-mode": "stop-at-tween-start"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "img_user",
+							"sid": 389923775468043,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "load-image-from-url",
+							"objectClass": "img_user",
+							"sid": 849544971259895,
+							"parameters": {
+								"uri": "Function.Param(0)",
+								"size": "keep-current-size",
+								"cross-origin": "anonymous"
+							}
+						}
+					],
+					"sid": 915538643821855
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 134595359154110,
+					"parameters": {
+						"first-value": "trigMomento",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 843853453732023,
+			"disabled": true,
+			"children": [
+				{
+					"eventType": "script",
+					"script": "//Get current user\nfirebase.auth().onAuthStateChanged(function(firebaseUser){\n\tif(firebaseUser){\n\t\t//User is signed in\n\t\tvar userID= firebase.auth().currentUser.uid;\n\t\tvar userEmail= firebase.auth().currentUser.email;\n\t\t\n\t\tc2_callFunction('in',[userID])\n\t}\n\telse{\n\t\t//User is signed out\n} })",
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 755525907556875,
+					"parameters": {
+						"key": "\"trig\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 957889796497396,
+					"parameters": {
+						"key": "\"trig\"",
+						"value": "\"0\""
+					}
+				}
+			],
+			"sid": 824548177032025,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 959803247570426,
+					"parameters": {
+						"name": "\"in\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 169999777036352,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "Function",
+							"sid": 256693367285929,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 914224928074366,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "img_user",
+									"sid": 364942753430115,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 231217774764521
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 215575349537481
+						}
+					],
+					"actions": [],
+					"sid": 517191144752953,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 219288112831423,
+									"parameters": {
+										"variable": "mix2",
+										"value": "Function.Param(0)"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 541010349211163,
+									"parameters": {
+										"layer": "1",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "execute-javascript",
+									"objectClass": "Browser",
+									"sid": 544797347358923,
+									"parameters": {
+										"javascript": "\" \r\n\r\n\r\n    if (firebase.auth().currentUser) {var user = firebase.auth().currentUser;\r\n var imma = user.photoURL;\r\nc2_callFunction('img',[imma]);\r\n};\""
+									}
+								}
+							],
+							"sid": 867843534850951
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 435506108442129
+				}
+			],
+			"actions": [
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 582563745775004,
+					"disabled": true,
+					"parameters": {
+						"key": "\"trig\""
+					}
+				},
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 508172180968694,
+					"disabled": true,
+					"parameters": {
+						"key": "\"trig\""
+					}
+				},
+				{
+					"id": "add-local-css-file",
+					"objectClass": "InjectCSS",
+					"sid": 727244483217067,
+					"disabled": true,
+					"parameters": {
+						"nomeCSS": "\"firebase-ui.css\""
+					}
+				},
+				{
+					"id": "add-html-element",
+					"objectClass": "InjectCSS",
+					"sid": 332031108735608,
+					"disabled": true,
+					"parameters": {
+						"stringElement": "\"\n  \n    <div id='container'>\n      <h3>FirebaseUI Demo</h3>\n      <div id='loading'>Loading...</div>\n      <div id='loaded' class='hidden'>\n        <div id='main'>\n          <div id='user-signed-in' class='hidden'>\n            <div id='user-info'>\n              <div id='photo-container'>\n                <img id='photo'>\n              </div>\n              <div id='name'></div>\n              <div id='email'></div>\n              <div id='phone'></div>\n              <div id='is-new-user'></div>\n              <div class='clearfix'></div>\n            </div>\n            <p>\n              <button id='sign-out'>Sign Out</button>\n              <button id='delete-account'>Delete account</button>\n            </p>\n          </div>\n          <div id='user-signed-out' class='hidden'>\n            <h4>You are signed out.</h4>\n            <fieldset>\n              <legend>Configuration</legend>\n              reCAPTCHA mode for Phone Auth:\n              <label for='recaptcha-normal'>\n                <input type='radio' id='recaptcha-normal' name='recaptcha' value='normal'>\n                Normal\n              </label>\n              <label for='recaptcha-invisible'>\n                <input type='radio' id='recaptcha-invisible' name='recaptcha' value='invisible'>\n                Invisible\n              </label><br>\n              Email signInMethod:\n              <label for='email-signInMethod-password'>\n                <input type='radio' id='email-signInMethod-password' name='emailSignInMethod'\n                       value='password'>\n                Password\n              </label>\n              <label for='email-signInMethod-emailLink'>\n                <input type='radio' id='email-signInMethod-emailLink' name='emailSignInMethod'\n                       value='emailLink'>\n                Email Link\n              </label>\n            </fieldset>\n            <p>\n              <button id='sign-in-with-redirect'>Sign In with Redirect</button>\n              <button id='sign-in-with-popup'>Sign In with Popup</button>\n            </p>\n            <div id='firebaseui-spa'>\n              <h5>Single Page Application mode:</h5>\n              <div id='firebaseui-container'></div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  \n\""
+					}
+				},
+				{
+					"id": "add-local-js-file",
+					"objectClass": "InjectCSS",
+					"sid": 763893420633186,
+					"disabled": true,
+					"parameters": {
+						"nomeJS": "\"app.js\""
+					}
+				}
+			],
+			"sid": 786505152608020,
+			"children": [
+				{
+					"eventType": "script",
+					"script": "//firebase.auth().onAuthStateChanged(function(user) {\n//  if (user) {\n    // User is signed in.\n//\tc2_callFunction('in',[result.user.uid])\n//  }else{}\n//});\nfirebase.auth().getRedirectResult().then(function(result) {\n  if (result.credential) {\n    // This gives you a Google Access Token. You can use it to access the Google API.\n    var token = result.credential.accessToken;\n    // ...\n  }\n  // The signed-in user info.\n  var user = result.user;\n  c2_callFunction('in',[result.user.uid])\n}).catch(function(error) {\n  // Handle Errors here.\n  var errorCode = error.code;\n  var errorMessage = error.message;\n  // The email of the user's account used.\n  var email = error.email;\n  // The firebase.auth.AuthCredential type that was used.\n  var credential = error.credential;\n  // ...\n});\n\n\n"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 252950234143139,
+							"parameters": {
+								"first-value": "trigMomento",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 861358548022908
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "create-initialize-tween",
+							"objectClass": "Family3",
+							"sid": 662004310531973,
+							"behaviorType": "LiteTween",
+							"parameters": {
+								"tweened-property": "scale",
+								"easing-function": "easeinoutback",
+								"target": "\"0.9\"",
+								"duration": "0.3",
+								"enforce-mode": "compromise"
+							}
+						},
+						{
+							"id": "start",
+							"objectClass": "Family3",
+							"sid": 231042327838827,
+							"behaviorType": "LiteTween",
+							"parameters": {
+								"start-mode": "start-from-the-beginning",
+								"force-use-current": "start-from-last-recorded"
+							}
+						}
+					],
+					"sid": 542472776546079
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 890240472594617,
+					"parameters": {
+						"object": "Family3"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 831235943763102
+		},
+		{
+			"eventType": "variable",
+			"name": "AC",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 905238839556998
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 637722833369371,
+					"parameters": {
+						"name": "\"AC_sub\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 494328593036767,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "Function",
+							"sid": 538194635857448,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "\"ute\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 835437009954613,
+							"parameters": {
+								"variable": "user_mode",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 745129165884511,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 163330937868070,
+									"parameters": {
+										"name": "\"ac\"",
+										"start-index": "1",
+										"end-index": "int(Function.Param(1))"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 193153171382882,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "execute-javascript",
+											"objectClass": "Browser",
+											"sid": 338831261215504,
+											"parameters": {
+												"javascript": "\"var count = firebase.database().ref('/PublicProducts/'+\"&loopindex&\");count.once('value').then(function(snap){var sC=snap.numChildren();   console.log(sC);   if (sC == 0){  c2_callFunction('end_g')     }else{c2_callFunction('iter_mezzo',[sC,\"&loopindex&\"]) }  })\"\n"
+											}
+										},
+										{
+											"id": "wait-for-signal",
+											"objectClass": "System",
+											"sid": 602388540931061,
+											"parameters": {
+												"tag": "\"end_g\""
+											}
+										}
+									],
+									"sid": 510283042527766,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 868457452060443,
+													"parameters": {
+														"first-value": "loopindex",
+														"comparison": 0,
+														"second-value": "int(Function.Param(1))"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "signal",
+													"objectClass": "System",
+													"sid": 503984009051773,
+													"parameters": {
+														"tag": "\"endEND_g\""
+													}
+												}
+											],
+											"sid": 450954747618542
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 955572662412031
+						}
+					],
+					"actions": [],
+					"sid": 643148426032001,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 795131477806550,
+									"parameters": {
+										"name": "\"ac\"",
+										"start-index": "1",
+										"end-index": "int(Function.Param(0))"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 796539107839291,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "execute-javascript",
+											"objectClass": "Browser",
+											"sid": 672522378182143,
+											"parameters": {
+												"javascript": "\"var PCref =firebase.database().ref('/Counters/PC/'+'\"&loopindex&\"'+'/'+'\"&Function.Param(1)&\"');\nPCref.child('totP').once('value').then(function(snap_k){var valore = snap_k.val();\r\nc2_callFunction('AC',[\"&loopindex&\",'yetAC']);console.log (valore);\r\nc2_callFunction('iter',[valore])  })\"\n"
+											}
+										}
+									],
+									"sid": 856820223022756
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 740048084614293,
+					"parameters": {
+						"name": "\"end_g\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 759099740624525,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 616952335136251,
+							"parameters": {
+								"tag": "\"endEND_g\""
+							}
+						}
+					],
+					"sid": 373276934896998
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 134700466244424,
+					"parameters": {
+						"name": "\"AC\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 561248430339359,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "Function",
+							"sid": 529623366170275,
+							"parameters": {
+								"index": "1",
+								"comparison": 0,
+								"value": "\"yetAC\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 424967207394716,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 449513396136292,
+									"parameters": {
+										"variable": "AC",
+										"value": "Function.Param(0)"
+									}
+								}
+							],
+							"sid": 199406720785275
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 966046422734369
+						}
+					],
+					"actions": [],
+					"sid": 656795456585842,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 761065808250596,
+									"parameters": {
+										"variable": "AC",
+										"value": "Function.Param(0)"
+									}
+								},
+								{
+									"id": "execute-javascript",
+									"objectClass": "Browser",
+									"sid": 808479642091727,
+									"parameters": {
+										"javascript": "\"\r\nvar ACref =  firebase.database().ref('/Counters/AC/');\r\n\nACref.update({'TotA': parseInt(\"&Function.Param(0)&\")+1});\"\n"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 793026374353052,
+									"parameters": {
+										"variable": "AC",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 532069158902876
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 273357151575218,
+					"parameters": {
+						"object": "split_user_admin"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 139683029741231,
+					"disabled": true,
+					"parameters": {
+						"key": "\"trig\"",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 403224191952576,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "split_user_admin",
+							"sid": 653961795031748,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 454714983537256,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "execute-javascript",
+									"objectClass": "Browser",
+									"sid": 743608181995429,
+									"parameters": {
+										"javascript": "\"var admin_info = firebase.auth().currentUser.uid;\nvar perco= firebase.database().ref('/Counters/');\nvar contato =  perco.child('AC/TotA/').once('value').then(function(ACV){var o = ACV.val();return o;});  \n        \n        \nvar refAdmin = firebase.database().ref('/Admins/');\nrefAdmin.once('value')\n   .then(function(snapshot,contato) {\n        \nvar hasChild = snapshot.hasChild(admin_info); // false on first time\n       if (hasChild != true){\t\t\t\t\n       c2_callFunction('AC',[contato,perco]);\n\t\t\t\n            var refAdminPanel =  refAdmin.child(admin_info);\n            refAdminPanel.set({\n\t\tInfo:'null',\n\t\tproducts:'null',\n\t\t\t\n\t\tchildrens:'null',\n\t\twallet:\n\t\t\t{\n\t\t\t\tfromProducts:'0',\n\t\t\t\tfromParents:'0',\n\t\t\t\tfromChildrens:'0',\n\t\t\t\tfromCampains:'0',\n\t\t\t\tfromChallenge:'0'\n\t\t\t}, \n\t\tparents: 'null'\n\n});\n\nc2_callFunction('check_go',[1,admin_info])\n\n          }else{ \n c2_callFunction('AC_sub',[contato,admin_info]);\n\n\n\n\n}\n\n})\""
+									}
+								},
+								{
+									"id": "execute-javascript",
+									"objectClass": "Browser",
+									"sid": 791059336605822,
+									"disabled": true,
+									"parameters": {
+										"javascript": "\"\nvar admin_info = firebase.auth().currentUser.uid;\n\n      \nvar refAdmin = firebase.database().ref('/Admins/');\nrefAdmin.once('value')\n   .then(function(snapshot) {\n        \nvar hasChild = snapshot.hasChild(admin_info); // false on first time\n       if (hasChild != true){\n     \n            var refAdminPanel =  refAdmin.child(admin_info);\n            refAdminPanel.set({\n\t\tInfo:'null',\n\t\tproducts:'null',\n\t\t\t\n\t\tchildrens:'null',\n\t\twallet:\n\t\t\t{\n\t\t\t\tfromProducts:'0',\n\t\t\t\tfromParents:'0',\n\t\t\t\tfromChildrens:'0',\n\t\t\t\tfromCampains:'0',\n\t\t\t\tfromChallenge:'0'\n\t\t\t}, \n\t\tparents: 'null'\n\n});\n\nc2_callFunction('check_go',[1,admin_info])\n\n          }else{ \n\n\nvar Vase_counter =  firebase.database().ref('/Counters/PC/');\nVase_counter.once('value')\n.then(function(c){\nvar pExist =c.hasChild(admin_info);\nif (pExist = true){\nconsole.log('entrato');\n\nvar counter =  firebase.database().ref('/Counters/PC/'+admin_info+'/');\n\ncounter.child('TotP').once('value').then(function(snap){\nvar valore = snap.val();\n\nc2_callFunction('iter',[valore])    })\n\n\n\n\n}\n\n})\n\n}\n})\n\n\n\""
+									}
+								}
+							],
+							"sid": 478925944430631
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "split_user_admin",
+							"sid": 156898761819122,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 971438800990407,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "execute-javascript",
+									"objectClass": "Browser",
+									"sid": 358822701251473,
+									"parameters": {
+										"javascript": "\"\r\nvar user_info = firebase.auth().currentUser;\r\nvar User_Uid = user_info.uid\r\n\r\nvar refUsers = firebase.database().ref('/Users/');\r\nrefUsers.once('value')\r\n   .then(function(snapshot) {\r\n       var hasChild = snapshot.hasChild(user_info.uid); // false on first time\r\n       if (hasChild != true){\r\n     \r\n            var refUsersScore =  refUsers.child(user_info.uid);\r\n            refUsersScore.set({'Info':'null','totCoins':{'Record':'0'}, 'Score' : 'null', 'totJems':{'Record':'0'},'totExp':{'Record':'0'},'totMoney':'0'});\r\n\r\nc2_callFunction('check_go',[0,User_Uid])\r\n          }else{\r\n\r\n\r\nc2_callFunction('check_go',[0,User_Uid])\r\n          };\r\n   });\r\n\r\n\""
+									}
+								},
+								{
+									"id": "execute-javascript",
+									"objectClass": "Browser",
+									"sid": 878111611465024,
+									"parameters": {
+										"javascript": "\"\r\nvar user = firebase.auth().currentUser;\r\nvar User_Uid = user.uid;\r\n\r\nvar refGlHigh = firebase.database().ref('GlobalHighScore/');\r\n refGlHigh.once('value')\r\n   .then(function(snapshot) {\r\n       var hasChild_a = snapshot.hasChild('Titles'); \r\n       if (hasChild_a != true){\r\n     \r\nc2_callFunction('check_go',[0,User_Uid])\r\n\r\n\r\n          }else{\r\n\r\nc2_callFunction('check_go',[0,User_Uid])\r\n\r\n          };\r\n   });\r\n\r\n\""
+									}
+								},
+								{
+									"id": "execute-javascript",
+									"objectClass": "Browser",
+									"sid": 817913975820270,
+									"parameters": {
+										"javascript": "\"\r\nvar user_i = firebase.auth().currentUser;\r\nvar User_Uid = user_i.uid;\r\n\r\nvar refUsrHigh = firebase.database().ref('/UsersHighScore/');\r\n refUsrHigh.once('value')\r\n   .then(function(snapshot) {\r\n       var hasChild_b = snapshot.hasChild(user_i.uid); // false on first time\r\n       if (hasChild_b != true){\r\n            var refTitles =   refUsrHigh.child(user_i.uid);\r\n            var infoTitles = refTitles.set({'Titles':'null'});\r\n\r\nc2_callFunction('check_go',[0,User_Uid])\r\n          }else{\r\n\r\nc2_callFunction('check_go',[0,User_Uid])\r\n\r\n          };\r\n   });\r\n\r\n\""
+									}
+								}
+							],
+							"sid": 374505291807281
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 718727266562706,
+					"parameters": {
+						"name": "\"check_go\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 782306405581458,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 847643826618994
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 886693583443100,
+							"parameters": {
+								"first-value": "Function.Param(0)",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 874615564024849,
+							"disabled": true,
+							"parameters": {
+								"key": "\"trig\"",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 301951836779572,
+							"parameters": {
+								"layer": "\"die\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 317517792610217,
+							"parameters": {
+								"variable": "mix2",
+								"value": "Function.Param(1)"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 878429219589045,
+							"disabled": true,
+							"parameters": {
+								"key": "\"trig\"",
+								"value": "0"
+							}
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 146420780630384,
+							"parameters": {
+								"layout": "\"Menu_admin\""
+							}
+						}
+					],
+					"sid": 777998289667313
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 290284838192191,
+							"parameters": {
+								"first-value": "Function.Param(0)",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 792026757451069,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 738494383492366,
+									"parameters": {
+										"variable": "trigLayout",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 383170565637615
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 186162320995091,
+									"parameters": {
+										"first-value": "trigLayout",
+										"comparison": 0,
+										"second-value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 413527037856600,
+									"disabled": true,
+									"parameters": {
+										"name": "\"iter\"",
+										"parameter-n": [
+											"\"user\""
+										]
+									}
+								},
+								{
+									"id": "execute-javascript",
+									"objectClass": "Browser",
+									"sid": 995335062247420,
+									"parameters": {
+										"javascript": "\"\r\n\r\nvar counter =  firebase.database().ref('/Counters/AC');\r\n\r\ncounter.child('TotA').once('value').then(function(snap){\r\nvar valore = snap.val();\r\nif(valore  ==  0){c2_callFunction('end_g')}else{\r\n\r\nc2_callFunction('AC_sub',['ute',valore])  }  });\r\n\r\n\r\n\"\r\n"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 444191848933706,
+									"disabled": true,
+									"parameters": {
+										"key": "\"trig\"",
+										"value": "0"
+									}
+								},
+								{
+									"id": "wait-for-signal",
+									"objectClass": "System",
+									"sid": 607883418904083,
+									"parameters": {
+										"tag": "\"endEND_g\""
+									}
+								},
+								{
+									"id": "go-to-layout-by-name",
+									"objectClass": "System",
+									"sid": 120848737381755,
+									"parameters": {
+										"layout": "\"Menu\""
+									}
+								}
+							],
+							"sid": 270856621680859
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 535203243640974,
+							"parameters": {
+								"first-value": "Function.Param(0)",
+								"comparison": 0,
+								"second-value": "\"read\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 574644142917165,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 775045033962914,
+									"parameters": {
+										"variable": "adm_data_obj",
+										"value": "Function.Param(1)&\" --- \"&newline"
+									}
+								},
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 406762782012472,
+									"parameters": {
+										"type": "log",
+										"message": "adm_data_obj"
+									}
+								}
+							],
+							"sid": 210972466889838,
+							"disabled": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 544770932796698,
+					"parameters": {
+						"name": "\"listProd\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 516594757497343,
+			"disabled": true,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "Conv",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 344227516787609
+				},
+				{
+					"eventType": "variable",
+					"name": "Conv2",
+					"type": "string",
+					"initialValue": "Coins,Jems,Experience,Money",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 854767443025982
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 206118602956323,
+							"parameters": {
+								"first-value": "Function.Param(0)",
+								"comparison": 0,
+								"second-value": "\"1\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 209961680420799,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 670974118216588,
+									"parameters": {
+										"name": "\"a\"",
+										"start-index": "0",
+										"end-index": "3"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 961573813427662,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-parameter",
+											"objectClass": "Function",
+											"sid": 295866542247197,
+											"parameters": {
+												"index": "loopindex(\"a\")",
+												"comparison": 1,
+												"value": "\"0\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 906765312770583,
+											"parameters": {
+												"variable": "Conv",
+												"value": "tokenat(Conv2,loopindex,\",\")&\":   \"&Function.Param(loopindex)"
+											}
+										}
+									],
+									"sid": 689103327807201
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 333155156813331,
+							"parameters": {
+								"variable": "adm_data_obj",
+								"value": "\"n.  \"&Function.Param(0)&\" - \"&Function.Param(2)&newline&Function.Param(2)&\"  \"&Function.Param(3)&\"  \"&Function.Param(4)&\"  \"&Function.Param(5)&\"  \"&Function.Param(7)&newline&\"______________________________________\"&newline"
+							}
+						}
+					],
+					"sid": 418150715272076,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 122801889897020,
+							"parameters": {
+								"first-value": "Function.Param(0)",
+								"comparison": 0,
+								"second-value": "Function.Param(8)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "execute-javascript",
+							"objectClass": "Browser",
+							"sid": 663603647333378,
+							"parameters": {
+								"javascript": "\"var admin_info = firebase.auth().currentUser.uid;c2_callFunction('check_go',[1,admin_info])\""
+							}
+						}
+					],
+					"sid": 794570700500382,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 598770866960516,
+					"parameters": {
+						"object": "Sprite30"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "execute-javascript",
+					"objectClass": "Browser",
+					"sid": 553687503961387,
+					"parameters": {
+						"javascript": "\"window.location = 'email-link.html';\""
+					}
+				}
+			],
+			"sid": 735946434119284,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 503676192345402,
+					"parameters": {
+						"object": "Sprite29"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "execute-javascript",
+					"objectClass": "Browser",
+					"sid": 956573708115393,
+					"parameters": {
+						"javascript": "\"      if (!firebase.auth().currentUser) {\r\n        // [START createprovider]  \r\n        var provider = new firebase.auth.FacebookAuthProvider();\r\n        // [END createprovider]\r\n        // [START addscopes]\r\n        provider.addScope('user_likes');\r\n        // [END addscopes]\r\n        // [START signin]\r\n        firebase.auth().signInWithRedirect(provider);document.getElementById('quickstart-sign-in-status').textContent = '1';\r\n\r\n      }\""
+					}
+				}
+			],
+			"sid": 856659699261942,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 799241063781344,
+					"parameters": {
+						"tag": "\"login\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 640447628715217,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 681528425559915,
+					"parameters": {
+						"object": "Sprite28"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-initialize-tween",
+					"objectClass": "img_user",
+					"sid": 978208690857582,
+					"behaviorType": "LiteTween",
+					"parameters": {
+						"tweened-property": "angle",
+						"easing-function": "linear",
+						"target": "\"360\"",
+						"duration": "0.5",
+						"enforce-mode": "compromise"
+					}
+				},
+				{
+					"id": "start",
+					"objectClass": "img_user",
+					"sid": 836000567013709,
+					"behaviorType": "LiteTween",
+					"parameters": {
+						"start-mode": "loop",
+						"force-use-current": "start-from-last-recorded"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 812977129253712,
+					"disabled": true,
+					"parameters": {
+						"key": "\"trig\"",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 140863205914194,
+			"children": [
+				{
+					"eventType": "script",
+					"script": "\nvar prompt = {'prompt':'select_account'};\nfirebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE)\n.then(function() {\n  var provider = new firebase.auth.GoogleAuthProvider();\n  // In memory persistence will be applied to the signed in Google user\n  // even though the persistence was set to 'none' and a page redirect\n  // occurred.\n  provider.setCustomParameters(prompt);\n  return firebase.auth().signInWithRedirect(provider);\n})\n.catch(function(error) {\n  // Handle Errors here.\n  var errorCode = error.code;\n  var errorMessage = error.message;\n});\n"
+				}
+			]
+		}
+	],
+	"sid": 285551563449004
+}

@@ -1,0 +1,762 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 18000,
+	"name": "_adgain_",
+	"runtime": "c3",
+	"useWorker": false,
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Function",
+			"name": "Function",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Geolocation",
+			"name": "Geolocation",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Text input",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "NodeWebkit",
+			"name": "NW.js",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Massive_Cube_Forge",
+			"name": "Forge",
+			"author": "Massive_Cube",
+			"version": "0.3.0.0",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "StraniAnelli_InjectCSS",
+			"name": "InjectCSS",
+			"author": "Strani Anelli",
+			"version": "0.1.3.0",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "StraniAnelli_HTMLElement",
+			"name": "HTML Element",
+			"author": "Scirra",
+			"version": "0.0.1.0",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "List",
+			"name": "List",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "filechooser",
+			"name": "File chooser",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "DrawingCanvas",
+			"name": "Drawing canvas",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "erenertugrul_base64_image",
+			"name": "base64 Image",
+			"author": "Eren Ertuğrul",
+			"version": "1.0.0.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "MassiveCube_MomentJS",
+			"name": "MomentJS",
+			"author": "Massive Cube",
+			"version": "1.0.0.0",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Massive_Cube_jsZip",
+			"name": "jsZip",
+			"author": "Massive_Cube",
+			"version": "0.8.0.0",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "BinaryData",
+			"name": "Binary Data",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "iframe",
+			"name": "iframe",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "StraniAnelli_InjectCSS_v2",
+			"name": "CSS",
+			"author": "StraniAnelli",
+			"version": "0.0.0.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "CV_PlayFabClient_UserData",
+			"name": "UserData",
+			"author": "Chadori_RebornXD",
+			"version": "1.0.0.0",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Persist",
+			"name": "Persist",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "lunarray_LiteTween",
+			"name": "Lite Tween",
+			"author": "lunarray",
+			"version": "1.7",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"version": "r180",
+			"bundled": false
+		}
+	],
+	"uniqueId": "1iabpoed8zcob",
+	"objectTypes": {
+		"items": [
+			"Touch",
+			"Sprite3",
+			"Sprite4",
+			"Text_indietro",
+			"Sprite2",
+			"Browser",
+			"Sprite5",
+			"Sprite6",
+			"Sprite9",
+			"Sprite10",
+			"TextSpeed",
+			"text_slider_money",
+			"Audio",
+			"Sprite14",
+			"Sprite15",
+			"Sprite16",
+			"Sprite17",
+			"Sprite18",
+			"Sprite19",
+			"LocalStorage",
+			"AJAX",
+			"Sprite20",
+			"Sprite_Coins",
+			"Sprite_Exp",
+			"Sprite_Jems",
+			"Sprite_money",
+			"Sprite25",
+			"Sprite_Slider",
+			"TiledBackground",
+			"TiledBackground2",
+			"TiledBackground3",
+			"TiledBackground4",
+			"Sprite27",
+			"Sprite28",
+			"Sprite29",
+			"Sprite30",
+			"button_bridge",
+			"img_user",
+			"Text_tasso",
+			"Function",
+			"text_slider_points",
+			"split_user_admin",
+			"Sprite31",
+			"menu_buttons",
+			"Tiled_Back_panel",
+			"Text_products_list",
+			"Text_child_list",
+			"label",
+			"Text2_debug",
+			"label2",
+			"selettore",
+			"Tiled_front_panel",
+			"selettore2",
+			"sbmit_button",
+			"Product_img",
+			"Geolocation",
+			"Sprite_selettore_coins",
+			"Sprite_linguetta",
+			"Label_linguetta",
+			"TiledBackground_Testa",
+			"Sprite_mesi",
+			"Mese",
+			"Text2",
+			"Text3",
+			"check",
+			"TextInput",
+			"pseudo_divBridge",
+			"NWjs",
+			"TOT_MONEY",
+			"TOT_EXP",
+			"TOT_JEMS",
+			"TOT_COINS",
+			"Forge",
+			"InjectCSS",
+			"HTML_listnr_testina",
+			"HTML_listnr_mpr",
+			"input_price_adv",
+			"input_qnt",
+			"input_Title_adv",
+			"TextInput4",
+			"input_descr",
+			"HTML_listnr_mprK",
+			"TextInput3",
+			"TextInput5",
+			"TextInput6",
+			"TextInput7",
+			"List",
+			"HTMLElement_pro",
+			"HTMLElement_sta",
+			"HTMLElement_loc",
+			"HTMLElement_addr",
+			"HTMLElement_tbb",
+			"FileChooser",
+			"DrawingCanvas",
+			"base64Image",
+			"MomentJS",
+			"txtNumb",
+			"txtDay",
+			"txtMonth",
+			"txtYear",
+			"zBackground",
+			"numbBack",
+			"dayBack",
+			"numbMarker",
+			"Sprite_dataRange",
+			"Input_StartEnd_date",
+			"Sprite_dataRange2",
+			"html_total_coins",
+			"html_total_exp",
+			"html_total_jems",
+			"html_total_money",
+			"HTML_cambioCoins",
+			"HTML_cambioExp",
+			"HTML_cmabioJems",
+			"HTML_slider_money",
+			"HTML_slider_points",
+			"Sprite_Coins2",
+			"Sprite_Exp2",
+			"Sprite_Jems2",
+			"Sprite_money2",
+			"HTML_price",
+			"HTML_var_listner",
+			"input_Shop_Name",
+			"input_Web",
+			"TiledBackground5",
+			"label_LOG",
+			"SpriteVisualizzatore",
+			"HTML_pr1",
+			"HTML_pr2",
+			"HTML_pr3",
+			"HTML_pr4",
+			"HTML_pr5",
+			"HTML_pr6",
+			"HTML_pr7",
+			"HTML_pr8",
+			"HTML_pr9_TPC",
+			"HTMLElement_map",
+			"input_CIty",
+			"input_Address",
+			"input_state",
+			"input_cap",
+			"input_Web6",
+			"List2",
+			"jsZip",
+			"BinaryData",
+			"TextInput2",
+			"iframe2",
+			"iframe_redi",
+			"input_prov",
+			"CSS",
+			"HTMLElement",
+			"HTML_geoC_city",
+			"HTML_geoC_addr",
+			"HTMLElement2",
+			"HTMLElement3",
+			"Button",
+			"HTMLElement4",
+			"UserData",
+			"HTMLElement5"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"listner",
+					"leaderboard",
+					"Pointer",
+					"Spinner",
+					"portfolio",
+					"Sprite",
+					"Sprite11",
+					"Sprite12",
+					"Sprite13"
+				],
+				"subfolders": [],
+				"name": "menu_obj"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [
+		{
+			"members": [
+				"listner",
+				"Sprite"
+			],
+			"selectMode": "normal"
+		},
+		{
+			"members": [
+				"numbBack",
+				"txtNumb"
+			],
+			"selectMode": "normal"
+		}
+	],
+	"families": {
+		"items": [
+			"Family1",
+			"Family2",
+			"Family4",
+			"Family3",
+			"Family5",
+			"Family_HTML_admin_conversion_viewer",
+			"Family_Html_Validator",
+			"Family_input_Validator",
+			"Family_data_label"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Menu_admin",
+			"Menu",
+			"Layout_mona",
+			"login",
+			"log_popUp",
+			"games",
+			"BBQ_scanner"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Menu_events",
+			"Event mona",
+			"Event login",
+			"Event_menu_admin",
+			"front_Debug_log",
+			"Event games",
+			"EVENT_BBQ_SCANNER"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [
+				{
+					"name": "Script.js",
+					"type": "text/javascript",
+					"sid": 649627552446835
+				}
+			],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 110314787631590
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 857988736746160
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 501530880940959
+				},
+				{
+					"name": "icon-114.png",
+					"type": "image/png",
+					"sid": 464513801254092
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 753202645359381
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 648989632769141
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [
+				{
+					"name": "jsQR.js",
+					"type": "application/javascript",
+					"sid": 817180262443754
+				}
+			],
+			"subfolders": [
+				{
+					"items": [],
+					"subfolders": [],
+					"name": "mat_Resu"
+				},
+				{
+					"items": [
+						{
+							"name": "geoC_widget_css.css",
+							"type": "text/css",
+							"sid": 213883973891475
+						},
+						{
+							"name": "geocoder_widget.js",
+							"type": "application/javascript",
+							"sid": 777390551336815
+						},
+						{
+							"name": "geoGENERAL_MY.css",
+							"type": "text/css",
+							"sid": 129800615270111
+						},
+						{
+							"name": "geoLPC_MY.css",
+							"type": "text/css",
+							"sid": 969862868120069
+						},
+						{
+							"name": "geoLPC_MY.js",
+							"type": "text/javascript",
+							"sid": 274188071084759
+						},
+						{
+							"name": "mapbox-gl.js",
+							"type": "text/javascript",
+							"sid": 785206994746515
+						}
+					],
+					"subfolders": [],
+					"name": "geo_serviz"
+				},
+				{
+					"items": [
+						{
+							"name": "no.png",
+							"type": "image/png",
+							"sid": 582370857353982
+						},
+						{
+							"name": "bootstrap.min.css",
+							"type": "text/css",
+							"sid": 986318421818507
+						},
+						{
+							"name": "yes.png",
+							"type": "image/png",
+							"sid": 198551976568757
+						},
+						{
+							"name": "New file.html",
+							"type": "text/html",
+							"sid": 848468144367549
+						},
+						{
+							"name": "bbq.js",
+							"type": "application/javascript",
+							"sid": 410444331244565
+						},
+						{
+							"name": "html5-qrcode.js",
+							"type": "text/javascript",
+							"sid": 850042921795368
+						},
+						{
+							"name": "jsqrcode-combined.js",
+							"type": "text/javascript",
+							"sid": 117759900478234
+						},
+						{
+							"name": "stili.css",
+							"type": "text/css",
+							"sid": 399794106537719
+						},
+						{
+							"name": "jquery.js",
+							"type": "text/javascript",
+							"sid": 299001848500211
+						}
+					],
+					"subfolders": [],
+					"name": "bbq_code"
+				},
+				{
+					"items": [
+						{
+							"name": "firebase-app.js",
+							"type": "text/javascript",
+							"sid": 110237623616540
+						},
+						{
+							"name": "style.css",
+							"type": "text/css",
+							"sid": 330218112021292
+						},
+						{
+							"name": "firebase-auth.js",
+							"type": "text/javascript",
+							"sid": 709423754869108
+						},
+						{
+							"name": "firebase-database.js",
+							"type": "text/javascript",
+							"sid": 629210163831562
+						}
+					],
+					"subfolders": [],
+					"name": "fireB"
+				},
+				{
+					"items": [
+						{
+							"name": "3.zip",
+							"type": "application/zip",
+							"sid": 418958723911740
+						}
+					],
+					"subfolders": [],
+					"name": "game"
+				}
+			]
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "test",
+		"version": "1.2.1.1",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "http://localhost",
+		"appId": "com.gameflow.adgain",
+		"pixelRounding": false,
+		"useLoaderLayout": true,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useHighDpi": true,
+		"orientations": "any",
+		"enableWebGL": true,
+		"gpuPreference": "high-performance",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"clearBackground": true,
+		"enhancedAccelerationPrecision": true
+	},
+	"viewportWidth": 640,
+	"viewportHeight": 1080,
+	"firstLayout": "login"
+}

@@ -1,0 +1,28 @@
+{
+	"name": "text_slider_points",
+	"plugin-id": "Text",
+	"sid": 399806977320698,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "sel",
+			"type": "number",
+			"desc": "",
+			"sid": 992905447777029
+		},
+		{
+			"name": "parent",
+			"type": "string",
+			"desc": "",
+			"sid": 519620885596606
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 341063229306909
+		}
+	],
+	"effectTypes": []
+}

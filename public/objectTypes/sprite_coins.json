@@ -1,0 +1,56 @@
+{
+	"name": "Sprite_Coins",
+	"plugin-id": "Sprite",
+	"sid": 667044045144690,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "pos",
+			"type": "number",
+			"desc": "",
+			"sid": 189402244740624
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 93,
+						"height": 92,
+						"originX": 0.505376,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\coin1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 24,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0.0217392,
+								0.973118,
+								1,
+								0,
+								0.98913
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 187494773466570,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

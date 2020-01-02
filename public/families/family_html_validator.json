@@ -1,0 +1,23 @@
+{
+	"name": "Family_Html_Validator",
+	"plugin-id": "StraniAnelli_HTMLElement",
+	"sid": 367038115171749,
+	"instanceVariables": [
+		{
+			"name": "allert_sender",
+			"type": "number",
+			"desc": "",
+			"sid": 134281204763782
+		},
+		{
+			"name": "alert_sender_code",
+			"type": "string",
+			"desc": "",
+			"sid": 872671764266590
+		}
+	],
+	"behaviorTypes": [],
+	"members": [
+		"html_total_money"
+	]
+}

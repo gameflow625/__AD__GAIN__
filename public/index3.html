@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<title>Place the geocoder input outside the map</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://localhost:5000/files/mapbox-gl.js'></script>
+<link href='https://localhost:5000/filefiles/s/geogeneral_my.css' rel='stylesheet' />
+<style>
+body { margin:0; padding:0; }
+#map {display:none}
+</style>
+</head>
+<body>
+
+<script src='https://localhost:5000/geolpc_my.js'></script>
+<link rel='stylesheet' href='https://localhost:5000/files/geolpc_my1.css' type='text/css' />
+<style>
+
+.geocoderAA{
+position:relative;
+display:block;
+z-index:900;
+width:80%;
+height:22px;
+left:5%;
+margin-top:10%;
+}
+
+.geocoder{
+position:relative;
+display:block;
+z-index:1000;
+width:80%;
+height:22px;
+left:5%;
+top:0%;
+}
+
+.input_field1{
+position:relative;
+display:block;
+z-index:1;
+width:100%;
+left:5%;
+}
+
+.AutoFilled{
+position:relative;
+display:block;
+left:5%;
+margin-top:10%;
+}
+
+.lis{
+font-size:0.01%;
+}
+
+.mapboxgl-ctrl-geocoder { 
+z-index:1000;
+min-width:100%; 
+height:100%;}
+
+.mapboxgl-ctrl-geocoder--input{ 
+font-size:80%;
+height:100%;}
+.mapboxgl-ctrl-geocoder--icon{ 
+margin-top:-12px;
+height:100%;}
+
+.suggestions-wrapper{
+display:block;
+z-index:1000;
+}
+
+.suggestions{
+
+display:block;
+z-index:1000;
+}
+.entry{
+width:60%;
+margin_bottom:-10%
+}
+
+.lab{
+float:left;
+margin-bottom:0px;
+
+}
+
+</style>
+<div id='map'></div>
+
+<form>
+
+
+<div id='geocoder' class='geocoder' ><h3 class='lab'>City</h3></div>
+
+
+<div id='geocoder_addr' class='geocoderAA'><h3 class='lab'>State</h3></div>
+
+
+
+<table class='AutoFilled'>
+
+<tr>
+  <th  >
+   <label >
+      <h3 class='lab'>State</h3> 
+   </label>
+   
+  </th>
+  
+  <th  >
+   <label >
+      <h3 class='lab' >Region</h3>  
+   </label>
+   
+  </th>
+ 
+</tr>
+<tr>
+
+<td>
+<input type='text' class='entry' id='Stato'>  </input>
+
+  </td>
+ <td>
+<input type='text' class='entry' id='Prov' >  </input>
+
+  </td>
+
+</tr>
+
+<tr>
+  <th  >
+   <label >
+      <h3 class='lab'>Postal Code</h3> 
+   </label>
+   
+  </th>
+  
+  <th  >
+   <label >
+      <h3 class='lab' >Button</h3>  
+   </label>
+   
+  </th>
+ 
+</tr>
+<tr>
+
+<td>
+<input type='text' class='entry' id='Cap'>  </input>
+
+  </td>
+ <td>
+<input type='button' class='entry' >  </input>
+
+  </td>
+
+</tr>
+</table>
+</form>
+ 
+<script>
+
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FtZWZsb3ciLCJhIjoiY2sydTV2b2pkMDQ1azNvcGFseW1scXpsOCJ9.2O3UF3tJBYI5HUN7K_2X_Q';
+
+t_BB = ''
+
+var geocoder_via = '';
+
+var map = new mapboxgl.Map({
+container: 'map'
+});
+
+var geocoder = new MapboxGeocoder({
+container: 'geocoder',
+accessToken: mapboxgl.accessToken,
+types: 'place',
+limit: 3,
+
+mapboxgl: mapboxgl,
+placeholder: 'Type your Address...',
+
+});
+
+
+var geocoder_via = new MapboxGeocoder({
+container: 'geocoderAA',
+accessToken: mapboxgl.accessToken,
+types: 'address',
+
+limit: 3,
+
+countries:'it',
+
+mapboxgl: mapboxgl,
+placeholder: 'Type your Address...',
+
+});
+
+
+var outputPROV = document.getElementById('Prov');
+var outputSTA = document.getElementById('Stato');
+var outputPROV_bri =             parent.document.getElementById('my_div_pro');
+//var outputSTA_bri = parent.document.getElementById('my_div_sta');
+//var outputLOC_bri = parent.document.getElementById('my_div_loc');
+//var outputADDR_bri = parent.document.getElementById('my_div_addr');
+var outputBBOX_bri = document.getElementById('CAP');
+
+geocoder.on('result', function(result){
+
+var obj = JSON.stringify(result);
+
+var t_BB_appo = JSON.parse(obj).result.bbox;
+
+t_BB = JSON.stringify(t_BB_appo);
+var matche_Prov = JSON.parse(obj).result.context[0].short_code;
+outputPROV.value=  matche_Prov.split('-')[1];
+outputSTA.value =JSON.parse(obj).result.context[1]['text'];
+//outputLOC_bri.innerHTML =JSON.parse(obj).result.text;
+outputBBOX_bri.innerHTML = t_BB;
+//outputSTA_bri.innerHTML =JSON.parse(obj).result.context[1]['text'];
+
+outputPROV_bri.innerHTML =matche_Prov.split('-')[1];
+return t_BB;
+console.log (JSON.parse(t_BB))
+
+});
+
+
+geocoder_via.on('loading',function(){
+
+var Parse = JSON.parse(t_BB);
+
+geocoder_via.options.bbox = Parse;
+
+});
+
+geocoder_via.on('result',function(result){
+
+var obj = JSON.stringify(result);
+
+//outputADDR_bri.innerHTML =JSON.parse(obj).result.text;
+
+});
+
+document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
+
+document.getElementById('geocoder_addr').appendChild(geocoder_via.onAdd(map));
+
+
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+	"name": "Input_StartEnd_date",
+	"plugin-id": "TextBox",
+	"sid": 689698518004975,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "f_t",
+			"type": "number",
+			"desc": "",
+			"sid": 142568791191974
+		}
+	],
+	"behaviorTypes": []
+}

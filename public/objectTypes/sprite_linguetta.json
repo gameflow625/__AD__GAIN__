@@ -1,0 +1,94 @@
+{
+	"name": "Sprite_linguetta",
+	"plugin-id": "Sprite",
+	"sid": 107042599453670,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "parent",
+			"type": "number",
+			"desc": "",
+			"sid": 588825909926462
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 441291508129064
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 47,
+						"height": 185,
+						"originX": 0.893617,
+						"originY": 0.502703,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\Linguetta.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 60,
+						"collisionPoly": {
+							"points": [
+								0.191489,
+								0.0486486,
+								1,
+								0.0378378,
+								1,
+								0.497297,
+								1,
+								0.951351,
+								0.212766,
+								0.945946,
+								0.170213,
+								0.497297
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 42,
+						"height": 185,
+						"originX": 1,
+						"originY": 0.502703,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 61,
+						"collisionPoly": {
+							"points": [
+								0.214286,
+								0.0486486,
+								1,
+								0.0378378,
+								1,
+								0.497297,
+								1,
+								0.951351,
+								0.238095,
+								0.945946,
+								0.190476,
+								0.497297
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 115779006690301,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

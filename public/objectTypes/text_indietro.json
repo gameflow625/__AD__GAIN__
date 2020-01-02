@@ -1,0 +1,45 @@
+{
+	"name": "Text_indietro",
+	"plugin-id": "Text",
+	"sid": 465177767878079,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "selector",
+			"type": "number",
+			"desc": "",
+			"sid": 188128704134152
+		},
+		{
+			"name": "type",
+			"type": "string",
+			"desc": "",
+			"sid": 863373650377930
+		},
+		{
+			"name": "selText",
+			"type": "string",
+			"desc": "",
+			"sid": 788040103043004
+		},
+		{
+			"name": "parent",
+			"type": "string",
+			"desc": "",
+			"sid": 711525778822287
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 734752976089282
+		},
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 556150163919564
+		}
+	],
+	"effectTypes": []
+}

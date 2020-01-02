@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "159242783322",
+    "firebase_url": "https://ad-gain-a5079.firebaseio.com",
+    "project_id": "ad-gain-a5079",
+    "storage_bucket": "ad-gain-a5079.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159242783322:android:69214819d813c2b6b12663",
+        "android_client_info": {
+          "package_name": "com.gameflow.adgain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159242783322-9qpq8utrl2iiq9crloi8sr6plu940lpp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4kMK4w0KzcN72-KOkEaJzL58fb5s4S1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159242783322-9qpq8utrl2iiq9crloi8sr6plu940lpp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

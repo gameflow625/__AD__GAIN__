@@ -1,0 +1,10 @@
+{
+	"name": "jsZip",
+	"plugin-id": "Massive_Cube_jsZip",
+	"sid": 772000353817950,
+	"singleglobal-inst": {
+		"type": "jsZip",
+		"properties": {},
+		"uid": 271
+	}
+}

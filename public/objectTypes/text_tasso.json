@@ -1,0 +1,28 @@
+{
+	"name": "Text_tasso",
+	"plugin-id": "Text",
+	"sid": 930357720785882,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "parrent",
+			"type": "string",
+			"desc": "",
+			"sid": 126463542147369
+		},
+		{
+			"name": "start",
+			"type": "number",
+			"desc": "",
+			"sid": 377598035789045
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 878661559014967
+		}
+	],
+	"effectTypes": []
+}

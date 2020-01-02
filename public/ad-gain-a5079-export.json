@@ -1,0 +1,81 @@
+{
+  "Admins" : "null",
+  "Counters" : {
+    "AC" : {
+      "TotA" : 0
+    },
+    "UC" : "null"
+  },
+  "GlobalHighScore" : "null",
+  "PC" : 0,
+  "PublicProducts" : 0,
+  "Users" : {
+    "96BtLy12f7TspgozW23SAlhnXgD3" : {
+      "Info" : "null",
+      "Score" : "null",
+      "totCoins" : {
+        "Record" : "0"
+      },
+      "totExp" : {
+        "Record" : "0"
+      },
+      "totJems" : {
+        "Record" : "0"
+      },
+      "totMoney" : "0"
+    },
+    "aeNu3WMGybSIe07ncPDyGI1HVpj1" : {
+      "Info" : "null",
+      "Score" : "null",
+      "totCoins" : {
+        "Record" : "0"
+      },
+      "totExp" : {
+        "Record" : "0"
+      },
+      "totJems" : {
+        "Record" : "0"
+      },
+      "totMoney" : "0"
+    },
+    "r1c2ycUixtUqGF78HwwnsBWQkpt1" : {
+      "Info" : "null",
+      "Score" : {
+        "Penalty" : 13
+      },
+      "totCoins" : {
+        "Record" : "0"
+      },
+      "totExp" : {
+        "Record" : "0"
+      },
+      "totJems" : {
+        "Penalty" : "13",
+        "Record" : "13"
+      },
+      "totMoney" : "0"
+    }
+  },
+  "UsersHighScore" : {
+    "96BtLy12f7TspgozW23SAlhnXgD3" : {
+      "Titles" : "null"
+    },
+    "aeNu3WMGybSIe07ncPDyGI1HVpj1" : {
+      "Titles" : "null"
+    },
+    "r1c2ycUixtUqGF78HwwnsBWQkpt1" : {
+      "Titles" : {
+        "Penalty" : {
+          "Record" : 13,
+          "img" : "https://lh5.googleusercontent.com/-lawuN0RLdXs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rdn7IFbNeel-UumHAdk4Pit7HbMWw/mo/photo.jpg",
+          "name" : "Raimondo Lenoci"
+        }
+      }
+    }
+  },
+  "tassiCambio" : {
+    "Coins" : 7,
+    "Exp" : 3,
+    "Jems" : 5
+  }
+}

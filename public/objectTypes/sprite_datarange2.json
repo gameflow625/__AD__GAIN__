@@ -1,0 +1,89 @@
+{
+	"name": "Sprite_dataRange2",
+	"plugin-id": "Sprite",
+	"sid": 985981627152247,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 235,
+						"height": 133,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\button_form1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 83,
+						"collisionPoly": {
+							"points": [
+								0.0425531914893617,
+								0.07518796992481203,
+								0.5,
+								0,
+								0.9531914893617022,
+								0.07518796992481203,
+								0.9829787234042553,
+								0.5,
+								0.9617021276595744,
+								0.9323308270676691,
+								0.5,
+								0.9774436090225563,
+								0.029787234042553193,
+								0.9398496240601504,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 235,
+						"height": 133,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\button_form2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 84,
+						"collisionPoly": {
+							"points": [
+								0.0425531914893617,
+								0.07518796992481203,
+								0.5,
+								0,
+								0.9531914893617022,
+								0.07518796992481203,
+								0.9829787234042553,
+								0.5,
+								0.9617021276595744,
+								0.9323308270676691,
+								0.5,
+								0.9774436090225563,
+								0.029787234042553193,
+								0.9398496240601504,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 686761564991320,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

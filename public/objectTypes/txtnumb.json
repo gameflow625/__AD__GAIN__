@@ -1,0 +1,22 @@
+{
+	"name": "txtNumb",
+	"plugin-id": "Text",
+	"sid": 634588461289646,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "myDay",
+			"type": "string",
+			"desc": "",
+			"sid": 907070331326230
+		},
+		{
+			"name": "myNumb",
+			"type": "number",
+			"desc": "",
+			"sid": 504994833465809
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

@@ -1,0 +1,10 @@
+{
+	"name": "Geolocation",
+	"plugin-id": "Geolocation",
+	"sid": 708095237872930,
+	"singleglobal-inst": {
+		"type": "Geolocation",
+		"properties": {},
+		"uid": 138
+	}
+}

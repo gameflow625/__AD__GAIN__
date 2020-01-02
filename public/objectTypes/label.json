@@ -1,0 +1,22 @@
+{
+	"name": "label",
+	"plugin-id": "Text",
+	"sid": 130151187658422,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "parent",
+			"type": "number",
+			"desc": "",
+			"sid": 886693343326831
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 354483078959938
+		}
+	],
+	"effectTypes": []
+}

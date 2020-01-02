@@ -1,0 +1,57 @@
+{
+	"name": "Sprite19",
+	"plugin-id": "Sprite",
+	"sid": 457558936314408,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 74,
+						"height": 84,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_download\\4.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 22,
+						"collisionPoly": {
+							"points": [
+								0.175676,
+								0.154762,
+								0.5,
+								0.047619,
+								0.891892,
+								0.0952381,
+								0.905405,
+								0.5,
+								0.783784,
+								0.809524,
+								0.5,
+								0.511905,
+								0.635135,
+								0.440476,
+								0.027027,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 789008103298093,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

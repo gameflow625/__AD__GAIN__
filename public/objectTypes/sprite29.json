@@ -1,0 +1,53 @@
+{
+	"name": "Sprite29",
+	"plugin-id": "Sprite",
+	"sid": 625972114391737,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 213,
+						"height": 42,
+						"originX": 0.502347,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\fb_butt.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 37,
+						"collisionPoly": {
+							"points": [
+								0.00469484,
+								0.0238095,
+								0.497653,
+								0,
+								0.995305,
+								0.0238095,
+								0.995305,
+								0.97619,
+								0.497653,
+								1,
+								0.00469484,
+								0.97619
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 447698671135708,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

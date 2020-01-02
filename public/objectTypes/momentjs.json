@@ -1,0 +1,10 @@
+{
+	"name": "MomentJS",
+	"plugin-id": "MassiveCube_MomentJS",
+	"sid": 232323537880758,
+	"singleglobal-inst": {
+		"type": "MomentJS",
+		"properties": {},
+		"uid": 89
+	}
+}

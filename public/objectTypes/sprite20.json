@@ -1,0 +1,57 @@
+{
+	"name": "Sprite20",
+	"plugin-id": "Sprite",
+	"sid": 915367368705834,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 261,
+						"height": 39,
+						"originX": 0,
+						"originY": 0.512821,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\frecce.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 23,
+						"collisionPoly": {
+							"points": [
+								0.0344828,
+								0.230769,
+								0.498084,
+								0.410256,
+								0.969349,
+								0.205128,
+								1,
+								0.487179,
+								0.969349,
+								0.794872,
+								0.498084,
+								0.589744,
+								0.0344828,
+								0.769231,
+								0,
+								0.487179
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 957592682210630,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

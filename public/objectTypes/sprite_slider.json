@@ -1,0 +1,123 @@
+{
+	"name": "Sprite_Slider",
+	"plugin-id": "Sprite",
+	"sid": 930154062222172,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "initX",
+			"type": "number",
+			"desc": "",
+			"sid": 824711642581305
+		},
+		{
+			"name": "type",
+			"type": "string",
+			"desc": "",
+			"sid": 469802695865294
+		},
+		{
+			"name": "mov",
+			"type": "string",
+			"desc": "",
+			"sid": 437509344155397
+		},
+		{
+			"name": "step",
+			"type": "number",
+			"desc": "",
+			"sid": 763633466254962
+		},
+		{
+			"name": "tasso_value",
+			"type": "number",
+			"desc": "",
+			"sid": 586870718382094
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 485708023263062
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 163776598867349
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 110,
+						"height": 194,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\slide.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 29,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								0.827273,
+								0.5,
+								1,
+								1,
+								0,
+								1,
+								0.172727,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 0
+					},
+					{
+						"width": 110,
+						"height": 194,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\slide1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 30,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								0.827273,
+								0.5,
+								1,
+								1,
+								0,
+								1,
+								0.172727,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 0
+					}
+				],
+				"sid": 229975017428264,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

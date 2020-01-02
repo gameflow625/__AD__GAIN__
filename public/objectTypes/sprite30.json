@@ -1,0 +1,49 @@
+{
+	"name": "Sprite30",
+	"plugin-id": "Sprite",
+	"sid": 541473546185454,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 229,
+						"height": 48,
+						"originX": 0.502183,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\email_butt.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 38,
+						"collisionPoly": {
+							"points": [
+								0.00873362,
+								0.0416667,
+								0.995633,
+								0.0208333,
+								0.991266,
+								0.958333,
+								0.00873362,
+								0.958333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 497480709014963,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

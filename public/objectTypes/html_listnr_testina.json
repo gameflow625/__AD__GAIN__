@@ -1,0 +1,15 @@
+{
+	"name": "HTML_listnr_testina",
+	"plugin-id": "StraniAnelli_HTMLElement",
+	"sid": 258625250381719,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "trig_chenge",
+			"type": "number",
+			"desc": "",
+			"sid": 219748779717791
+		}
+	],
+	"behaviorTypes": []
+}

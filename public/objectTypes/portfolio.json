@@ -1,0 +1,55 @@
+{
+	"name": "portfolio",
+	"plugin-id": "Sprite",
+	"sid": 132796041902210,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 320,
+						"height": 185,
+						"originX": 0.5,
+						"originY": 0.508108,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\portfolio.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3,
+						"collisionPoly": {
+							"points": [
+								0.27455,
+								0.371857,
+								0.501027,
+								0.207723,
+								0.776573,
+								0.307198,
+								0.750151,
+								0.670281,
+								0.501027,
+								0.769756,
+								0.289649,
+								0.620543,
+								0.23303,
+								0.506148
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 571802584871654,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

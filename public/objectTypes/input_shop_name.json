@@ -1,0 +1,8 @@
+{
+	"name": "input_Shop_Name",
+	"plugin-id": "TextBox",
+	"sid": 852735552048958,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

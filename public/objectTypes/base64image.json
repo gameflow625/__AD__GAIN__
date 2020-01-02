@@ -1,0 +1,10 @@
+{
+	"name": "base64Image",
+	"plugin-id": "erenertugrul_base64_image",
+	"sid": 801064022501364,
+	"singleglobal-inst": {
+		"type": "base64Image",
+		"properties": {},
+		"uid": 90
+	}
+}

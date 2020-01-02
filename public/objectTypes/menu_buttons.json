@@ -1,0 +1,176 @@
+{
+	"name": "menu_buttons",
+	"plugin-id": "Sprite",
+	"sid": 529329963112632,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "parent",
+			"type": "string",
+			"desc": "",
+			"sid": 329010610426457
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\plus.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 44,
+						"collisionPoly": {
+							"points": [
+								0.0859375,
+								0.0859375,
+								0.5,
+								0.0703125,
+								0.90625,
+								0.09375,
+								0.90625,
+								0.90625,
+								0.09375,
+								0.90625,
+								0.0703125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\settings.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 45,
+						"collisionPoly": {
+							"points": [
+								0.0859375,
+								0.0859375,
+								0.5,
+								0.0703125,
+								0.90625,
+								0.09375,
+								0.90625,
+								0.90625,
+								0.09375,
+								0.90625,
+								0.0703125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\meno.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 46,
+						"collisionPoly": {
+							"points": [
+								0.0859375,
+								0.0859375,
+								0.5,
+								0.0703125,
+								0.90625,
+								0.09375,
+								0.90625,
+								0.90625,
+								0.09375,
+								0.90625,
+								0.0703125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\edit.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 47,
+						"collisionPoly": {
+							"points": [
+								0.0859375,
+								0.0859375,
+								0.5,
+								0.0703125,
+								0.90625,
+								0.09375,
+								0.90625,
+								0.90625,
+								0.09375,
+								0.90625,
+								0.0703125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 742,
+						"height": 508,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\bbq_btn.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 80,
+						"collisionPoly": {
+							"points": [
+								0.24303405572755418,
+								0.357630979498861,
+								0.5,
+								0.00683371298405467,
+								0.7414860681114551,
+								0.37813211845102507,
+								0.9241486068111455,
+								0.5,
+								0.7476780185758514,
+								0.6287015945330297,
+								0.5,
+								0.9681093394077449,
+								0.25077399380804954,
+								0.6287015945330297,
+								0.015479876160990712,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 597981274378712,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

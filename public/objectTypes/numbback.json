@@ -1,0 +1,92 @@
+{
+	"name": "numbBack",
+	"plugin-id": "Sprite",
+	"sid": 532577334094596,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "from_to",
+			"type": "number",
+			"desc": "",
+			"sid": 369678982993473
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 68,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Korisnik\\Desktop\\n48.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 73,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "1",
+								"x": 0.17647058823529413,
+								"y": 0.5
+							},
+							{
+								"name": "0",
+								"x": 0.8235294117647058,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 68,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Korisnik\\Desktop\\n48b.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 74,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 68,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Korisnik\\Desktop\\n48c.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 75,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 68,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Korisnik\\Desktop\\Untitled-1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 76,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 548785360101715,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

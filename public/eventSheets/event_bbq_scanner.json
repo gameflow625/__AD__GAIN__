@@ -1,0 +1,91 @@
+{
+	"name": "EVENT_BBQ_SCANNER",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 733153823523697
+				}
+			],
+			"actions": [
+				{
+					"id": "add-local-css-file",
+					"objectClass": "InjectCSS",
+					"sid": 617798953796141,
+					"parameters": {
+						"nomeCSS": "\"bootstrap.min.css\""
+					}
+				},
+				{
+					"id": "add-local-css-file",
+					"objectClass": "InjectCSS",
+					"sid": 729112832006161,
+					"disabled": true,
+					"parameters": {
+						"nomeCSS": "\"stili.css\""
+					}
+				},
+				{
+					"id": "add-html-element",
+					"objectClass": "InjectCSS",
+					"sid": 180969713480650,
+					"parameters": {
+						"stringElement": "\"<body><div class='container' style='position:absolute;left:13%;top:10%;text-align: center'>\r\n\t\t<h1> QR Code scanner </h1>\r\n\t\t<br><br>\r\n\r\n\t\t<div id='qr' style='display: inline-block; width: 250px; height: 250px; border: 1px solid silver'></div>\r\n\t\t<br><br>\r\n\r\n\t\t<div class='row'>\r\n\t\t\t<button id='scan' class='btn btn-success btn-sm'>start scaning</button>\r\n\t\t\t<button id='stop' class='btn btn-warning btn-sm disabled'>stop scanning</button>\r\n\t\t\t<button id='change' class='btn btn-warning btn-sm disabled'>change camera</button>\r\n\t\t</div>\r\n\t\t<br><br>\r\n\t\t<div class='row'>\r\n\t\t\t<div class='col-md-12'>\r\n\t\t\t\t<code>Click 'Start Scanning' to <b>start scanning QR Code</b></code>\r\n\t\t\t\t<br>\r\n\t\t\t\t<span class='feedback' style='margin: 10px; display: inline-block'></span>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div></body>\""
+					}
+				},
+				{
+					"id": "add-local-js-file",
+					"objectClass": "InjectCSS",
+					"sid": 628603445415065,
+					"parameters": {
+						"nomeJS": "\"jquery.js\""
+					}
+				},
+				{
+					"id": "add-local-js-file",
+					"objectClass": "InjectCSS",
+					"sid": 854915118521925,
+					"parameters": {
+						"nomeJS": "\"jsqrcode-combined.js\""
+					}
+				},
+				{
+					"id": "add-local-js-file",
+					"objectClass": "InjectCSS",
+					"sid": 184887450622729,
+					"parameters": {
+						"nomeJS": "\"html5-qrcode.js\""
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 948243372467653,
+					"disabled": true
+				},
+				{
+					"id": "execute-javascript",
+					"objectClass": "Browser",
+					"sid": 414092409537590,
+					"disabled": true,
+					"parameters": {
+						"javascript": "\"load();\""
+					}
+				},
+				{
+					"id": "add-local-js-file",
+					"objectClass": "InjectCSS",
+					"sid": 491401284492276,
+					"parameters": {
+						"nomeJS": "\"bbq.js\""
+					}
+				}
+			],
+			"sid": 307136647202229
+		}
+	],
+	"sid": 596226522908071
+}

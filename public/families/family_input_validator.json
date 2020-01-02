@@ -1,0 +1,47 @@
+{
+	"name": "Family_input_Validator",
+	"plugin-id": "TextBox",
+	"sid": 791450189977341,
+	"instanceVariables": [
+		{
+			"name": "alert_seder",
+			"type": "number",
+			"desc": "",
+			"sid": 421472430202198
+		},
+		{
+			"name": "alert_sender_code",
+			"type": "string",
+			"desc": "",
+			"sid": 447952734544352
+		},
+		{
+			"name": "bake_id",
+			"type": "string",
+			"desc": "",
+			"sid": 278959175152003
+		}
+	],
+	"behaviorTypes": [],
+	"members": [
+		"input_Title_adv",
+		"Input_StartEnd_date",
+		"input_Shop_Name",
+		"input_qnt",
+		"input_price_adv",
+		"input_descr",
+		"TextInput",
+		"TextInput3",
+		"TextInput4",
+		"TextInput5",
+		"TextInput6",
+		"TextInput7",
+		"input_Web",
+		"input_CIty",
+		"input_Address",
+		"input_state",
+		"input_cap",
+		"input_Web6",
+		"input_prov"
+	]
+}

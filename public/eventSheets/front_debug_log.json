@@ -1,0 +1,781 @@
+{
+	"name": "front_Debug_log",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "trig_Wizard",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 941959277691832
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 402203597304159,
+					"parameters": {
+						"name": "\"wait_fix\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 970017397093154
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 328927915384959,
+					"parameters": {
+						"name": "\"builder\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 161730795885806,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "Function",
+							"sid": 533062369752854,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "\"Form_populate\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 447249230012168,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 959982090115840,
+									"parameters": {
+										"first-value": "trig_Wizard",
+										"comparison": 0,
+										"second-value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 633106873108197,
+									"parameters": {
+										"variable": "trig_Wizard",
+										"value": "2"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "label_LOG",
+									"sid": 781847374106532,
+									"parameters": {
+										"text": "\"There are some \"&newline&\"- INVALID EMPTY VALUE -\"&newline&\"Please  follow the wizard to fill them ...\""
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 236635445009436,
+									"parameters": {
+										"layer": "\"B_alert_popu\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 702097896777914,
+									"parameters": {
+										"layer": "\"F_alert_popup\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 966416783894217,
+									"parameters": {
+										"seconds": "5"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 820998741499074,
+									"parameters": {
+										"layer": "\"B_alert_popu\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 628693645491257,
+									"parameters": {
+										"layer": "\"F_alert_popup\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 765173678648908,
+									"parameters": {
+										"seconds": "0.5"
+									}
+								}
+							],
+							"sid": 369319040779067
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 703424621394374,
+									"parameters": {
+										"first-value": "trig_Wizard",
+										"comparison": 0,
+										"second-value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Tiled_Back_panel",
+									"sid": 216641819312254,
+									"parameters": {
+										"instance-variable": "steps",
+										"value": "1"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 311444640211938,
+									"parameters": {
+										"name": "\"switch_states\"",
+										"parameter-n": [
+											"0",
+											"1"
+										]
+									}
+								}
+							],
+							"sid": 182871384939946,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-parameter",
+											"objectClass": "Function",
+											"sid": 161635936411047,
+											"parameters": {
+												"index": "1",
+												"comparison": 0,
+												"value": "\"shop_INFO\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 312529276586030,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-animation-frame",
+													"objectClass": "sbmit_button",
+													"sid": 248745439832171,
+													"parameters": {
+														"frame-number": "1"
+													}
+												},
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 901249767464866,
+													"parameters": {
+														"name": "\"switch_states\"",
+														"parameter-n": [
+															"0",
+															"Function.Param(1)",
+															"\"debug\""
+														]
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 242683318196819,
+													"parameters": {
+														"variable": "trig_Wizard",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 420675662898099
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "test-regex",
+											"objectClass": "System",
+											"sid": 900495774199211,
+											"parameters": {
+												"string": "Function.Param(1)",
+												"regex": "\"rules\"",
+												"flags": "\"gi\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 842441918490558,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 234496631419541,
+													"parameters": {
+														"name": "\"switch_states\"",
+														"parameter-n": [
+															"2",
+															"Function.Param(1)",
+															"\"debug\""
+														]
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 921281850543599,
+													"parameters": {
+														"variable": "trig_Wizard",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 417866168813133
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-parameter",
+											"objectClass": "Function",
+											"sid": 909742183955232,
+											"parameters": {
+												"index": "1",
+												"comparison": 0,
+												"value": "\"prod_INFO\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 601980527807559,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 464779360685334,
+													"parameters": {
+														"name": "\"switch_states\"",
+														"parameter-n": [
+															"1",
+															"Function.Param(1)",
+															"\"debug\""
+														]
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 115018826123027,
+													"parameters": {
+														"variable": "trig_Wizard",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 120959052880399
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-parameter",
+											"objectClass": "Function",
+											"sid": 127130672169394,
+											"parameters": {
+												"index": "1",
+												"comparison": 0,
+												"value": "\"cal\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 150615932499541,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-all",
+													"objectClass": "System",
+													"sid": 851508024079917,
+													"parameters": {
+														"object": "Sprite_linguetta"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation-frame",
+													"objectClass": "Sprite_linguetta",
+													"sid": 950123696045954,
+													"parameters": {
+														"frame-number": "1"
+													}
+												}
+											],
+											"sid": 420885048583589
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-comparison",
+													"objectClass": "System",
+													"sid": 474836763641240,
+													"parameters": {
+														"object": "Label_linguetta",
+														"expression": "Label_linguetta.Text",
+														"comparison": 0,
+														"value": "\"Period\""
+													}
+												}
+											],
+											"actions": [],
+											"sid": 704377300269543,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "pick-by-comparison",
+															"objectClass": "System",
+															"sid": 411942042644354,
+															"parameters": {
+																"object": "Sprite_linguetta",
+																"expression": "sprite_linguetta.parent",
+																"comparison": 0,
+																"value": "Label_linguetta.UID"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-animation-frame",
+															"objectClass": "Sprite_linguetta",
+															"sid": 383357411972896,
+															"parameters": {
+																"frame-number": "1"
+															}
+														}
+													],
+													"sid": 348880277114524
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 961732404475444,
+													"parameters": {
+														"name": "\"switch_states\"",
+														"parameter-n": [
+															"3",
+															"0",
+															"0"
+														]
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 706415814006298,
+													"parameters": {
+														"variable": "trig_Wizard",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 563553318773801
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 820114662779871
+								}
+							],
+							"actions": [
+								{
+									"id": "wait-for-signal",
+									"objectClass": "System",
+									"sid": 107840701684487,
+									"parameters": {
+										"tag": "\"debug_fix\""
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 678117967322858,
+									"parameters": {
+										"variable": "trig_Wizard",
+										"value": "2"
+									}
+								}
+							],
+							"sid": 499113283573730
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 257401152818876,
+					"parameters": {
+						"name": "\"blocco_rules\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 826866045834005,
+			"disabled": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 144688223385080,
+							"parameters": {
+								"layer": "\"back\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 563519357303060,
+							"parameters": {
+								"layer": "\"Basic_UI\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 545888303099960,
+							"parameters": {
+								"layer": "\"panel\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 906047652431632,
+							"parameters": {
+								"layer": "\"panel_GUI\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 944910560507387,
+							"parameters": {
+								"layer": "\"prod_INFO\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 492548183046023,
+							"parameters": {
+								"layer": "\"shop_INFO\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 478344168259793,
+							"parameters": {
+								"layer": "\"rules_GUI\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 362448193007518,
+							"parameters": {
+								"layer": "\"rules_conv_1\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 345187161410807,
+							"parameters": {
+								"layer": "\"rules_conv_2\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 109545787626377,
+							"parameters": {
+								"layer": "\"rules_conv_3\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 962645324458711,
+							"parameters": {
+								"layer": "\"cal_sotto\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 677735447297986,
+							"parameters": {
+								"layer": "\"cal_sopra\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 444894942478063,
+							"parameters": {
+								"layer": "\"rules_mission\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 667106709666703,
+							"parameters": {
+								"layer": "\"submit\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 907883304239647,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 253058368001557,
+					"parameters": {
+						"name": "\"Allert\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "position-set-y",
+					"objectClass": "Family_HTML_admin_conversion_viewer",
+					"sid": 337568208499549,
+					"parameters": {
+						"y": "-500"
+					}
+				}
+			],
+			"sid": 745231882954145,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "Function",
+							"sid": 575235495252402,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "\"Form_populate\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 181370251025539,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 259922334421001,
+									"parameters": {
+										"object": "Family_input_Validator"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 288380237433487,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 755608303611987,
+											"parameters": {
+												"object": "Family_input_Validator",
+												"expression": "Family_input_Validator.alert_seder",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "call-function",
+											"objectClass": "Function",
+											"sid": 299410234814179,
+											"parameters": {
+												"name": "\"builder\"",
+												"parameter-n": [
+													"Function.Param(0)",
+													"Family_input_Validator.alert_sender_code",
+													"Family_input_Validator.UID"
+												]
+											}
+										},
+										{
+											"id": "wait-for-signal",
+											"objectClass": "System",
+											"sid": 566382915789727,
+											"parameters": {
+												"tag": "\"debug_fix\""
+											}
+										}
+									],
+									"sid": 101896333332034
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "Function",
+							"sid": 848387127513078,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "\"Alert_Money\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 841585721826897,
+							"parameters": {
+								"name": "\"builder\"",
+								"parameter-n": [
+									"Function.Param(0)",
+									"Family_input_Validator.alert_sender_code"
+								]
+							}
+						}
+					],
+					"sid": 158223136871923,
+					"disabled": true
+				}
+			]
+		}
+	],
+	"sid": 540247666909269
+}

@@ -1,0 +1,49 @@
+{
+	"name": "Sprite_money",
+	"plugin-id": "Sprite",
+	"sid": 324895811318911,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 126,
+						"height": 111,
+						"originX": 0.5,
+						"originY": 0.513514,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\money.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 27,
+						"collisionPoly": {
+							"points": [
+								0.112573,
+								0.948731,
+								0.111111,
+								0.0645369,
+								0.881579,
+								0.0735459,
+								0.875731,
+								0.959377
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 231033817625773,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

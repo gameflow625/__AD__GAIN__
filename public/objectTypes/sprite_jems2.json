@@ -1,0 +1,56 @@
+{
+	"name": "Sprite_Jems2",
+	"plugin-id": "Sprite",
+	"sid": 924074615829789,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "pos",
+			"type": "number",
+			"desc": "",
+			"sid": 283345660914233
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 93,
+						"height": 92,
+						"originX": 0.505376,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\jems1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 87,
+						"collisionPoly": {
+							"points": [
+								0.956989,
+								0.0108696,
+								0.994733,
+								1,
+								0,
+								0.98913,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 254146067711930,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

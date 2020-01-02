@@ -1,0 +1,19 @@
+{
+	"name": "Family5",
+	"plugin-id": "StraniAnelli_HTMLElement",
+	"sid": 313167576929715,
+	"instanceVariables": [
+		{
+			"name": "lonk_F",
+			"type": "string",
+			"desc": "",
+			"sid": 789612986890382
+		}
+	],
+	"behaviorTypes": [],
+	"members": [
+		"HTML_cambioCoins",
+		"HTML_cmabioJems",
+		"HTML_cambioExp"
+	]
+}

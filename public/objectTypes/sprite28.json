@@ -1,0 +1,66 @@
+{
+	"name": "Sprite28",
+	"plugin-id": "Sprite",
+	"sid": 196145613252938,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "trig",
+			"type": "number",
+			"desc": "",
+			"sid": 955141356309477
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 959920983965337
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 195,
+						"height": 42,
+						"originX": 0.502564,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\google_butt.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 36,
+						"collisionPoly": {
+							"points": [
+								0.00512821,
+								0.0238095,
+								0.497436,
+								0,
+								0.994872,
+								0.0238095,
+								0.994872,
+								0.97619,
+								0.497436,
+								1,
+								0.00512821,
+								0.97619
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 811508584540263,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

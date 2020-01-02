@@ -1,0 +1,53 @@
+{
+	"name": "Sprite31",
+	"plugin-id": "Sprite",
+	"sid": 553912112647770,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 721,
+						"height": 1102,
+						"originX": 0.44378930097087377,
+						"originY": 0.45749898729582583,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\admin_menu.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 96,
+						"collisionPoly": {
+							"points": [
+								0.03497221539528433,
+								0,
+								0.8453066171983358,
+								0,
+								0.9898524299583911,
+								0.45649569056261347,
+								0.9197696754507629,
+								1,
+								0,
+								1,
+								0,
+								0.45649569056261347
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 237873247436369,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

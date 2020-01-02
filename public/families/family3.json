@@ -1,0 +1,20 @@
+{
+	"name": "Family3",
+	"plugin-id": "Sprite",
+	"sid": 689723855916071,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "lunarray_LiteTween",
+			"name": "LiteTween",
+			"sid": 571980959076559
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"split_user_admin",
+		"Sprite28",
+		"Sprite29",
+		"Sprite30"
+	]
+}

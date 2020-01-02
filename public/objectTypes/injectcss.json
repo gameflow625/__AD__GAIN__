@@ -1,0 +1,19 @@
+{
+	"name": "InjectCSS",
+	"plugin-id": "StraniAnelli_InjectCSS",
+	"sid": 656090954014377,
+	"singleglobal-inst": {
+		"type": "InjectCSS",
+		"properties": {
+			"CSSFiles": "",
+			"CSSExternal": "",
+			"JSFiles": "",
+			"JSExternal": "",
+			"destroyCanvas": false,
+			"disableBodyStyleInline": false,
+			"disableHtmlPageStyleInline": false,
+			"removePreloadedCSS": false
+		},
+		"uid": 74
+	}
+}

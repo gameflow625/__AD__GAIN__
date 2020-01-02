@@ -1,0 +1,57 @@
+{
+	"name": "Sprite5",
+	"plugin-id": "Sprite",
+	"sid": 399885039208463,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 184,
+						"height": 183,
+						"originX": 0.5,
+						"originY": 0.502732,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_download\\btn1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 12,
+						"collisionPoly": {
+							"points": [
+								0.206522,
+								0.20765,
+								0.5,
+								0.0819672,
+								0.793478,
+								0.20765,
+								0.913043,
+								0.497268,
+								0.793478,
+								0.79235,
+								0.5,
+								0.918033,
+								0.206522,
+								0.79235,
+								0.0869565,
+								0.497268
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 446124338905065,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

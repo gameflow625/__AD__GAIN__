@@ -1,0 +1,65 @@
+{
+	"name": "Sprite2",
+	"plugin-id": "Sprite",
+	"sid": 326899445120780,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 721,
+						"height": 1102,
+						"originX": 0.443828,
+						"originY": 0.459165,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\Layout_menu_DEF.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 16,
+						"collisionPoly": {
+							"points": [
+								0.0575667,
+								0,
+								0.829093,
+								0,
+								0.901424,
+								0.457131,
+								0.825384,
+								0.963575,
+								0.0612754,
+								0.963575,
+								0,
+								0.457131
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 649,
+						"height": 1032,
+						"originX": 0.50077,
+						"originY": 0.5,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\Layout_menu_mona.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 11,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 169032479774954,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

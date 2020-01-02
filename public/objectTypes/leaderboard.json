@@ -1,0 +1,57 @@
+{
+	"name": "leaderboard",
+	"plugin-id": "Sprite",
+	"sid": 477409385688870,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 320,
+						"height": 185,
+						"originX": 0.5,
+						"originY": 0.508108,
+						"originalSource": "C:\\DOC_MOUSIKESSERE\\AD_Gain\\materiale_DEF\\leaderBoard.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 0,
+						"collisionPoly": {
+							"points": [
+								0.397059,
+								0.457627,
+								0.5,
+								0,
+								0.647059,
+								0.40678,
+								0.720588,
+								0.491525,
+								0.926471,
+								0.915254,
+								0.5,
+								0.864407,
+								0.0588235,
+								0.932203,
+								0.294118,
+								0.491525
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 644055386559898,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"name": "text_slider_money",
+	"plugin-id": "Text",
+	"sid": 716883485250175,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "sel",
+			"type": "number",
+			"desc": "",
+			"sid": 658997115943628
+		},
+		{
+			"name": "parent",
+			"type": "string",
+			"desc": "",
+			"sid": 656003818262666
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 225493894963266
+		},
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 878241972818162
+		}
+	],
+	"effectTypes": []
+}
