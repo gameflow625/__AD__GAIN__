@@ -30313,9 +30313,9 @@ function initializeFirebase(){
 	//var script7= document.createElement('script');
 	//meta1.name= "google-signin-client_id";
 	//meta1.content="907661578115-llf8areuu3ttuvuvqan60vvnclui060b.apps.googleusercontent.com";
-	script1.src= "firebase-app.js";
-	script2.src= "firebase-auth.js";
-	script3.src= "firebase-database.js";
+	script1.src= "https://gameflow625.github.io/__AD__GAIN__/public/firebase-app.js";
+	script2.src= "https://gameflow625.github.io/__AD__GAIN__/public/firebase-auth.js";
+	script3.src= "https://gameflow625.github.io/__AD__GAIN__/public/firebase-database.js";
 	//script4.src= "https://localhost:443/firebase.js";
 	//script5.src= "https://localhost:443/files/config.js";
 	//script6.src= "https://localhost:443/files/common.js";
